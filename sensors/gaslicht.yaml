@@ -1,0 +1,24 @@
+  - platform: template
+    sensors:
+      stroom_verbruik:
+        friendly_name: Electriciteit
+        entity_id: sensor.time
+        value_template: "{{ states('sensor.power_consumption')|float * 1000 }}"
+        unit_of_measurement: 'kW'
+      gas_verbruik:
+        friendly_name: Gas
+        entity_id: sensor.time
+        value_template: "{{ states('sensor.hourly_gas_consumption')|float * 100 }}"
+        unit_of_measurement: 'cm3'
+      piek_stroom_kosten:
+        friendly_name: Piek Stroom Kosten
+        value_template: "{{ ( states('sensor.monthly_power_peak')|float * 0.23826)| round(2) }}"
+        unit_of_measurement: '€'
+      dal_stroom_kosten:
+        friendly_name: Dal Stroom Kosten
+        value_template: "{{ ( states('sensor.monthly_power_offpeak')|float * 0.22616)| round(2) }}"
+        unit_of_measurement: '€'
+      gas_kosten:
+        friendly_name: Gas Kosten
+        value_template: "{{ ( states('sensor.monthly_gas')|float * 0.76245)| round(2) }}"
+        unit_of_measurement: '€'

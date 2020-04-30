@@ -1,0 +1,7 @@
+secrets.yaml
+.storage
+.cloud
+.google.token
+.ios.conf
+google_calendars.yaml
+wavenet_voice.json

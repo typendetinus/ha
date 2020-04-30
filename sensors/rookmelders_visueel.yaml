@@ -1,0 +1,29 @@
+  - platform: template
+    sensors:
+      rookmelder_beneden:
+        friendly_name: Rookmelder beneden
+        value_template: >-
+          {% if is_state('sensor.downstairs_nest_protect_color_status','green') %}
+          OK
+          {% elif is_state('sensor.downstairs_nest_protect_color_status','yellow') %}
+          Waarschuwing !!
+          {% elif is_state('sensor.downstairs_nest_protect_color_status','red') %}
+          Alarm !!
+          {% elif is_state('sensor.downstairs_nest_protect_color_status','grey') %}
+          Nachtlamp
+          {% endif %}
+
+  - platform: template
+    sensors:
+      rookmelder_boven:
+        friendly_name: Rookmelder boven
+        value_template: >-
+          {% if is_state('sensor.upstairs_nest_protect_color_status','green') %}
+          OK
+          {% elif is_state('sensor.upstairs_nest_protect_color_status','yellow') %}
+          Waarschuwing !!
+          {% elif is_state('sensor.upstairs_nest_protect_color_status','red') %}
+          Alarm !!
+          {% elif is_state('sensor.upstairs_nest_protect_color_status','grey') %}
+          Nachtlamp
+          {% endif %}

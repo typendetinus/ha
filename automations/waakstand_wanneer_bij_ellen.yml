@@ -1,0 +1,9 @@
+- id: waakstand_wanneer_bij_ellen
+  alias: "Doen alsof er iemand thuis is"
+  trigger:
+    platform: sun
+    event: sunset
+
+    action:
+      - service: scene.turn_on
+        entity_id: scene.thuis_komen_na_zonsondergang

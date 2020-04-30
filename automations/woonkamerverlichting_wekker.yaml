@@ -1,0 +1,17 @@
+  - alias: "Woonkamerverlichting in de ochtend"
+    initial_state: 'on'
+    trigger:
+      platform: template
+      value_template: '{{ states.sensor.time.state == states.sensor.alarm_clock_time_long.state }}'
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: input_boolean.alarm_clock_status
+          state: 'on'
+        - condition: state
+          entity_id: sun.sun
+          state: 'below_horizon'
+    action:
+      service: scene.turn_on
+      entity_id: scene.woonkamer_en_keuken_verlichting_bij_zonsopkomst

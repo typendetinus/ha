@@ -1,0 +1,6 @@
+  - platform: foscam
+    ip: 10.0.1.120
+    username: !secret foscam_user
+    password: !secret foscam_pwd
+    name: Woonkamer
+    rtsp_port: 554

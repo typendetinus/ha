@@ -1,0 +1,23 @@
+  - platform: here_travel_time
+    api_key: !secret here_api
+    name: Reistijd naar Ellen
+    origin_entity_id: device_tracker.iphone_van_martijn
+    destination_entity_id: zone.ellen
+    traffic_mode: true
+    route_mode: fastest
+
+  - platform: here_travel_time
+    api_key: !secret here_api
+    name: Reistijd naar Werk
+    origin_entity_id: device_tracker.iphone_van_martijn
+    destination_entity_id: zone.werk
+    traffic_mode: true
+    route_mode: fastest
+
+  - platform: here_travel_time
+    api_key: !secret here_api
+    name: Reistijd naar Huis
+    origin_entity_id: device_tracker.iphone_van_martijn
+    destination_entity_id: zone.home
+    traffic_mode: true
+    route_mode: fastest

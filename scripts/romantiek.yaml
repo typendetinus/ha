@@ -1,0 +1,55 @@
+  romantiek:
+    alias: Romantiek in de slaapkamer
+    sequence:
+      - service: input_boolean.turn_on
+        data:
+          entity_id: input_boolean.romance_dummy
+      - service: hue.hue_activate_scene
+        data:
+          group_name: "Slaapkamer"
+          scene_name: "Knus"
+      - service: spotcast.start
+        data:
+          entity_id: media_player.slaapkamer_hub
+          uri: "spotify:playlist:37i9dQZF1DWYMvTygsLWlG"
+          random_song: true
+      - service: media_extractor.play_media
+        entity_id: media_player.slaapkamer_cast
+        data:
+          media_content_id: "https://www.youtube.com/watch?v=L_LUpnjgPso&t=238s"
+          media_content_type: video/youtube
+      - service: remote.send_command
+        data:
+          entity_id: remote.slaapkamer_hub
+          command:
+            - PowerOn
+            - Mute
+            - InputHdmi3
+          device: 57139772
+          delay_secs: 0.6
+      - service: remote.send_command
+        data:
+          entity_id: remote.slaapkamer_hub
+          command:
+            - PowerToggle
+          device: 58752089
+          delay_secs: 0.6
+
+  romantiek_uit:
+    alias: Stop romantiek in de slaapkamer
+    sequence:
+      - service: input_boolean.turn_off
+        data:
+          entity_id: input_boolean.romance_dummy
+      - service: media_player.turn_off
+        entity_id: media_player.slaapkamer_google_home
+      - service: remote.turn_on
+        entity_id: remote.slaapkamer_hub
+        data:
+          activity: "PowerOff"
+      - service: light.turn_off
+        data:
+          entity_id:  light.slaapkamer
+      - service: media_player.media_stop
+        data:
+          entity_id: media_player.slaapkamer_cast

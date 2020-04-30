@@ -1,0 +1,51 @@
+goedemorgen_weekend:
+    alias: Goedemorgen in het weekend
+    sequence:
+      - service: input_boolean.turn_on
+        data:
+          entity_id: input_boolean.goedemorgenweekend_dummy
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer_lamp_rechts
+          brightness: 1
+          rgb_color: [98,19,0]
+      - delay:
+          seconds: 5.00
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer_lamp_links
+          brightness: 1
+          rgb_color: [249,123,0]
+      - delay:
+          seconds: 5.00
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer_lamp_midden
+          brightness: 1
+          rgb_color: [249,123,0]
+      - delay:
+          seconds: 10.00
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer
+          brightness: 254
+          rgb_color: [255,210,129]
+          transition: 30
+      - delay:
+          seconds: 40.00
+      - service: switch.turn_on
+        entity_id:
+          - switch.slaapkamer_appletv
+
+goedemorgen_weekend_uit:
+    alias: Goedemorgen in het weekend uit
+    sequence:
+      - service: switch.turn_off
+        entity_id:
+          - switch.slaapkamer_appletv
+      - service: light.turn_off
+        data:
+          entity_id: light.slaapkamer
+      - service: input_boolean.turn_off
+        data:
+          entity_id: input_boolean.goedemorgenweekend_dummy

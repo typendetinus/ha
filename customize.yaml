@@ -1,0 +1,199 @@
+light.benedem_hal_lamp_2:
+  friendly_name: Beneden hal lamp 2
+light.gateway_light_7811dce136bb:
+  friendly_name: Hoeklamp
+device_tracker.iphone_van_martijn:
+  friendly_name: iPhone
+  icon: mdi:cellphone-iphone
+device_tracker.audi_batmobil_9000:
+  entity_picture: /local/images/audi.png
+  friendly_name: Auto
+person.martijn:
+  entity_picture: /local/images/tijn_nieuw.jpg
+  friendly_name: Martijn
+sensor.google_geocode:
+  entity_picture: /local/images/audilogo.jpg
+  friendly_name: Auto
+sensor.positie_auto:
+  icon: mdi:parking
+sensor.time:
+  hidden: true
+sensor.alarm_clock_hour:
+  hidden: true
+sensor.alarm_clock_minute:
+  hidden: true
+sensor.alarm_clock_time_long:
+  hidden: true
+sensor.alarm_clock_time:
+  friendly_name: Wekker Tijd
+  icon: mdi:alarm
+input_slider.alarm_clock_hour:
+  friendly_name: Uur
+  icon: mdi:timer
+input_slider.alarm_clock_minute:
+  friendly_name: Minuut
+  icon: mdi:timer
+input_boolean.alarm_clock_status:
+  friendly_name: Wekker Status
+  icon: mdi:alarm-check
+input_number.alarm_clock_hour:
+  friendly_name: Uur
+  icon: mdi:alarm-note
+input_number.alarm_clock_minute:
+  friendly_name: Minuut
+  icon: mdi:alarm-note
+sensor.positie_martijn:
+  icon: mdi:cellphone-iphone
+switch.kantoor_playstation3:
+  icon: mdi:playstation
+switch.kantoor_televisie:
+  icon: mdi:television
+switch.logeerkamer_appletv:
+  icon: mdi:apple
+switch.logeerkamer_dvd_speler:
+  icon: mdi:disc
+switch.logeerkamer_televisie:
+  icon: mdi:television
+switch.logeerkamer_chromecast:
+  icon: mdi:cast
+switch.logeerkamer_playstation3:
+  icon: mdi:playstation
+binary_sensor.voordeur:
+  icon: mdi:door
+binary_sensor.tuindeur:
+  icon: mdi:door
+binary_sensor.dakterras_deur:
+  icon: mdi:door
+binary_sensor.keuken_raam:
+  icon: mdi:window-closed
+binary_sensor.woonkamer_raam:
+  icon: mdi:window-closed
+switch.kantoor_linuxpc:
+  friendly_name: Kantoor Linux PC
+  icon: mdi:desktop-classic
+switch.kantoor_appletv:
+  icon: mdi:apple
+switch.kantoor_chromecast_audio:
+  icon: mdi:cast
+switch.kantoor_radio:
+  icon: mdi:radio
+switch.kantoor_squeezebox:
+  icon: mdi:volume-high
+media_player.living_room_squeezebox:
+  icon: mdi:volume-high
+switch.logeerkamer_squeezebox:
+  icon: mdi:volume-high
+switch.woonkamer_appletv:
+  icon: mdi:apple
+switch.woonkamer_bluray_speler:
+  icon: mdi:disc
+switch.woonkamer_chromecast:
+  icon: mdi:cast
+switch.woonkamer_playstation3:
+  icon: mdi:playstation
+switch.woonkamer_playstation4:
+  icon: mdi:playstation
+switch.woonkamer_radio:
+  icon: mdi:radio
+switch.woonkamer_squeezebox:
+  icon: mdi:volume-high
+switch.woonkamer_televisie:
+  icon: mdi:television
+switch.woonkamer_xbox:
+  icon: mdi:xbox
+switch.slaapkamer_appletv:
+  icon: mdi:apple
+switch.slaapkamer_chromecast:
+  icon: mdi:cast
+switch.slaapkamer_televisie:
+  icon: mdi:television
+switch.burolamp:
+  icon: mdi:desk-lamp
+switch.nachtlamp_links:
+  icon: mdi:desk-lamp
+switch.nachtlamp_rechts:
+  icon: mdi:desk-lamp
+switch.boekenkast:
+  icon: mdi:floor-lamp
+switch.televisie_meubel:
+  icon: mdi:floor-lamp-variant
+switch.bed_sensor:
+  icon: mdi:bed-king-outline
+binary_sensor.badkamer_deur:
+  icon: mdi:door
+binary_sensor.slaapkamer_raam:
+  icon: mdi:window-closed
+binary_sensor.kantoor_raam:
+  icon: mdi:window-closed
+binary_sensor.logeerkamer_raam:
+  icon: mdi:window-closed
+automation.zolder_raam_links_is_nog_open:
+  icon: mdi:window-closed
+binary_sensor.zolderraam_rechts:
+  icon: mdi:window-closed
+binary_sensor.zolderraam_links:
+  icon: mdi:window-closed
+alarm_control_panel.ha_alarm:
+  friendly_name: Huis Alarm
+remote.guesthub:
+  friendly_name: Logeerkamer Hub
+remote.officehub:
+  friendly_name: Kantoor Hub
+remote.living_room_hub:
+  friendly_name: Woonkamer Hub
+switch.romantiek:
+  friendly_name: Romantiek
+  icon: mdi:heart-multiple
+sensor.rest_sensor:
+  friendly_name: VPN
+binary_sensor.printer:
+  device_class: power
+  icon: mdi:printer
+binary_sensor.imac:
+  device_class: power
+  icon: mdi:desktop-mac
+switch.slapen:
+  icon: mdi:sleep
+  friendly_name: Slapen
+device_tracker.ipad:
+  icon: mdi:tablet-ipad
+device_tracker.ipadair:
+  icon: mdi:tablet-ipad
+switch.slaap_mode:
+  friendly_name: Slapen
+lock.batmobil_9000_door_lock:
+  friendly_name: Auto portieren
+binary_sensor.batmobil_9000_doors:
+  friendly_name: Auto portieren
+sensor.batmobil_9000_tank_level:
+  friendly_name: Brandstof Tank
+binary_sensor.slaapkamer_deur:
+  icon: mdi:door
+binary_sensor.kantoor_deur:
+  icon: mdi:door
+binary_sensor.logeerkamer_deur:
+  icon: mdi:door
+binary_sensor.toilet_deur:
+  icon: mdi:door
+sensor.piek_stroom_kosten:
+  icon: mdi:flash
+sensor.dal_stroom_kosten:
+  icon: mdi:flash
+sensor.gas_kosten:
+  icon: mdi:fire
+sensor.slaapkamer_sensor_light_level:
+  icon: mdi:white-balance-sunny
+sun.sun:
+  friendly_name: Zon
+sensor.stroom_verbruik:
+  icon: mdi:flash
+sensor.gas_verbruik:
+  icon: mdi:fire
+switch.sonoff_10003d8d27:
+  friendly_name: Slaapkamer ventilator
+  icon: mdi:fan
+input_boolean.kantoor_appletv: {}
+switch.bedlamp02:
+  icon: mdi:theme-light-dark
+switch.bedlamp01:
+  icon: mdi:theme-light-dark

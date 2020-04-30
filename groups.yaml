@@ -1,0 +1,70 @@
+  alarm_clock:
+    name: 'Alarm Clock'
+    entities:
+      - sensor.alarm_clock_time
+      - input_slider.alarm_clock_hour
+      - input_slider.alarm_clock_minute
+      - input_boolean.alarm_clock_status
+
+  buitendeuren:
+    name: 'Buiten Deuren'
+    entities:
+      - binary_sensor.voordeur
+      - binary_sensor.tuindeur
+      - binary_sensor.dakterras_deur
+
+  ramen:
+    name: 'Ramen'
+    entities:
+      - binary_sensor.woonkamer_raam
+      - binary_sensor.keuken_raam
+      - binary_sensor.slaapkamer_raam
+      - binary_sensor.kantoor_raam
+      - binary_sensor.logeerkamer_raam
+      - binary_sensor.zolderraam_links
+      - binary_sensor.zolderraam_rechts
+
+  verlichting_woonkamer:
+    name: 'Woonkamer Verlichting'
+    entities:
+      - light.woonkamer
+      - light.videohoek
+      - switch.boekenkast
+      - switch.televisie_meubel
+
+  verlichting_beneden:
+    name: 'Verlichting Beneden'
+    entities:
+      - light.beneden_hal
+      - light.toilet
+
+  verlichting_slaapkamer:
+    name: 'Verlichting Slaapkamer'
+    entities:
+      - light.slaapkamer
+      - light.slaapkamer_spot
+      - switch.nachtlamp_links
+      - switch.nachtlamp_rechts
+      - switch.bed_sensor
+
+  verlichting_schuur:
+    name: 'Verlichting Schuur'
+    entities:
+      - light.schuur
+
+  iphone_martijn:
+    - sensor.activity_iphone
+    - sensor.average_active_pace_iphone
+    - sensor.bssid_iphone
+    - sensor.battery_level_iphone
+    - sensor.battery_state_iphone
+    - sensor.connection_type_iphone
+    - sensor.distance_iphone
+    - sensor.floors_ascended_iphone
+    - sensor.floors_descended_iphone
+    - sensor.geocoded_location_iphone
+    - sensor.last_update_trigger_iphone
+    - sensor.sim_iphone
+    - sensor.ssid_iphone
+    - sensor.steps_iphone
+    - device_tracker.iphone

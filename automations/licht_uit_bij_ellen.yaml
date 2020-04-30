@@ -1,0 +1,15 @@
+- id: licht_uit_wanneer_bij_ellen
+  alias: "Doen alsof er iemand thuis is 2"
+  initial_state: false
+  trigger:
+    platform: time
+    at: '22:23:00'
+
+  condition:
+    condition: state
+    entity_id: switch.bij_ellen
+    state: 'on'
+
+  action:
+    - service: scene.turn_off
+      entity_id: scene.thuis_komen_na_zonsondergang   

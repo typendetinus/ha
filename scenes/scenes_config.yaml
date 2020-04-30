@@ -1,0 +1,73 @@
+  - name: Woonkamer en keuken verlichting bij zonsopkomst
+    entities:
+        light.woonkamer:
+            state: on
+            transition: 2
+            brightness_pct: 70
+        light.keuken01:
+            state: on
+            transition: 2
+            brightness_pct: 5
+        light.keuken02:
+            state: on
+            transition: 2
+            brightness_pct: 5
+        light.keuken03:
+            state: on
+            transition: 2
+            brightness_pct: 5
+
+  - name: woonkamer on
+    entities:
+        light.woonkamer:
+            state: on
+            transition: 2
+            brightness_pct: 50
+
+  - name: Thuis komen na zonsondergang
+    entities:
+        light.woonkamer:
+            state: on
+            transition: 2
+            brightness_pct: 25
+        light.keuken:
+            state: on
+            transition: 2
+            brightness_pct: 10
+        switch.woonkamer_radio:
+            state: on
+
+  - name: Slaapstand
+    entities:
+        light.woonkamer:
+            state: 'off'
+        light.slaapkamer:
+            state: 'off'
+        light.logeerkamer:
+            state: 'off'
+        light.beneden_hal:
+            state: 'off'
+        light.kantoor:
+            state: 'off'
+        light.boven_hal:
+            state: 'off'
+        light.keuken:
+            state: 'off'
+        light.schuur:
+            state: 'off'
+        light.zolder:
+            state: 'off'
+        light.wasruimte:
+            state: 'off'
+        remote.living_room_hub:
+            state: 'off'
+        remote.slaapkamer_hub:
+            state: 'off'
+        remote.officehub:
+            state: 'off'
+        remote.guesthub:
+            state: 'off'
+        climate.living_room:
+            state: 'off'
+        switch.bed_sensor:
+            state: 'on'

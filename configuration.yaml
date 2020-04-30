@@ -1,0 +1,279 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+  base_url: !secret outside_url
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+
+cloud:
+
+discovery:
+
+homeassistant:
+  customize: !include customize.yaml
+
+recorder:
+  purge_keep_days: 5
+  db_url: mysql://hass:Sandino49!@172.30.33.0/homeassistant?charset=utf8
+
+lovelace:
+  mode: yaml
+  dashboards:
+    lovelace-yaml:
+      mode: yaml
+      filename: nest-hub.yaml
+      title: Nest-Hub
+      icon: mdi:google-assistant
+      show_in_sidebar: true
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Nest thermoestaat en protect configuratie
+nest:
+  client_id: !secret nest_client
+  client_secret: !secret nest_secret
+
+mobile_app:
+
+spotify:
+  client_id: !secret spotify_id
+  client_secret: !secret spotify_secret
+
+homekit:
+  filter:
+    include_entities:
+    - switch.boekenkast
+    - switch.bed_sensor
+    - switch.burolamp
+    - switch.woonkamer_televisie
+    - switch.woonkamer_appletv
+    - switch.woonkamer_bluray_speler
+    - switch.woonkamer_chromecast
+    - switch.woonkamer_playstation3
+    - switch.woonkamer_playstation4
+    - switch.woonkamer_radio
+    - switch.woonkamer_xbox
+    - switch.slaapkamer_televisie
+    - switch.slaapkamer_appletv
+    - switch.slaapkamer_chromecast
+    - switch.kantoor_televisie
+    - switch.kantoor_appletv
+    - switch.kantoor_chromecast_audio
+    - switch.kantoor_linuxpc
+    - switch.kantoor_playstation3
+    - switch.kantoor_radio
+    - switch.kantoor_squeezebox
+    - switch.logeerkamer_televisie
+    - switch.logeerkamer_appletv
+    - switch.logeerkamer_chromecast
+    - switch.logeerkamer_dvd_speler
+    - switch.logeerkamer_playstation3
+    - switch.logeerkamer_squeezebox
+    - climate.living_room
+    - binary_sensor.voordeur
+    - binary_sensor.tuindeur
+    - binary_sensor.dakterras_deur
+    - binary_sensor.keuken_raam
+    - binary_sensor.woonkamer_raam
+    - binary_sensor.slaapkamer_raam
+    - binary_sensor.kantoor_raam
+    - binary_sensor.logeerkamer_raam
+    - binary_sensor.zolderraam_links
+    - binary_sensor.zolderraam_rechts
+    - binary_sensor.toilet_deur
+    - binary_sensor.badkamer_deur
+    - binary_sensor.kantoor_deur
+    - binary_sensor.logeerkamer_deur
+    - binary_sensor.slaapkamer_deur
+    - binary_sensor.tussendeur
+    
+  entity_config:
+    switch.boekenkast:
+      name: Boekenkast Verlichting
+    switch.bed_sensor:
+      name: Bed Verlichting
+    switch.burolamp:
+      name: Burolamp
+
+xiaomi_aqara:
+  discovery_retry: 9
+  gateways:
+    - key: !secret xi_key
+
+tuya:
+  username: !secret tuya_user
+  password: !secret tuya_password
+  country_code: 31
+
+sonoff:
+  username: !secret sonoff_user
+  password: !secret sonoff_password
+
+utility_meter:
+  daily_power_offpeak:
+    source: sensor.energy_consumption_tarif_1
+    cycle: daily
+  daily_power_peak:
+    source: sensor.energy_consumption_tarif_2
+    cycle: daily
+  daily_gas:
+    source: sensor.gas_consumption
+    cycle: daily
+  monthly_power_offpeak:
+    source: sensor.energy_consumption_tarif_1
+    cycle: monthly
+  monthly_power_peak:
+    source: sensor.energy_consumption_tarif_2
+    cycle: monthly
+  monthly_gas:
+    source: sensor.gas_consumption
+    cycle: monthly
+
+google:
+  client_id: !secret google_client
+  client_secret: !secret google_secret
+  track_new_calendar: true
+
+person:
+
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api
+    name: Weersverwachting
+    mode: daily
+  - platform: buienradar
+    name: 'Delft'
+    
+
+panel_iframe:
+  tautulli:
+    title: Plex
+    icon: mdi:filmstrip
+    url: https://10.0.1.215:8181
+
+# Text to speech
+tts:
+  - platform: google_cloud
+    key_file: wavenet_voice.json
+    language: nl-NL
+    gender: female
+    voice: nl-NL-Wavenet-D
+
+media_extractor:
+
+shell_command:
+  zet_linuxpc_uit: "ssh martijn@spacestation.martijn sudo pm-suspend"
+
+stream:
+
+hacs:
+  token: !secret hacs_token
+
+input_number:
+  alarm_clock_hour:
+    initial: 6
+    min: 0
+    max: 23
+    step: 1
+  alarm_clock_minute:
+    initial: 0
+    min: 0
+    max: 55
+    step: 5
+
+input_boolean:
+  alarm_clock_status:
+    initial: on
+  huisbewaking:
+    initial: off
+  romance_dummy:
+    initial: off
+  slaap_mode_dummy:
+    initial: off
+  goedemorgenweekend_dummy:
+    initial: off
+  erisgebeld:
+    initial: off
+  bij_ellen:
+    initial: off
+
+counter:
+  deurbel_teller:
+    initial: 0
+    step: 1
+
+shopping_list:
+    
+binary_sensor:
+  - platform: ping
+    host: Martijns-iMac.martijn
+    name: iMac
+    scan_interval: 30
+  - platform: ping
+    host: 10.0.1.161
+    name: Printer
+    scan_interval: 30
+
+spotcast:
+  username: !secret spotuser
+  password: !secret spotpwd
+
+glances:
+  - host: 10.0.1.192
+    version: 3
+  - host: localhost
+    version: 2
+
+mqtt:
+  broker: localhost
+  username: mqrt_user
+  password: !secret mqtt_pwd
+  discovery: true
+  discovery_prefix: homeassistant
+
+light:
+  - platform: group
+    name: Keuken
+    entities:
+      - light.keuken01
+      - light.keuken02
+      - light.keuken03
+  - platform: group
+    name: Afzuigkap
+    entities:
+      - light.afzuigkap01
+      - light.afzuigkap02
+  - platform: group
+    name: Boven hal
+    entities:
+      - light.bovenhal01
+      - light.bovenhal02
+  - platform: group
+    name: Logeerkamer
+    entities:
+      - light.logeerkamer01
+      - light.logeerkamer02
+      - light.logeerkamer03
+  - platform: group
+    name: Zolder
+    entities:
+      - light.zolder01
+      - light.zolder02
+  - platform: group
+    name: Kantoor
+    entities:
+      - light.kantoor01
+      - light.kantoor02
+
+group: !include groups.yaml
+media_player: !include_dir_merge_list media_player/
+automation: !include_dir_merge_list automations/
+script: !include_dir_merge_named scripts/
+switch: !include_dir_merge_list switch/
+camera: !include_dir_merge_list cameras/
+scene: !include_dir_merge_list scenes/
+sensor: !include_dir_merge_list sensors/

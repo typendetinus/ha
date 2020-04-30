@@ -1,0 +1,4 @@
+  - platform: dsmr
+    host: 10.0.1.192
+    port: 2001
+    dsmr_version: 5

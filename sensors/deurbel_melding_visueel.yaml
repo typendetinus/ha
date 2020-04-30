@@ -1,0 +1,10 @@
+  - platform: template
+    sensors:
+      er_is_gebeld:
+        friendly_name: Er is aan de deur gebeld
+        value_template: >-
+          {% if is_state('input_boolean.erisgebeld','on') %}
+          Afgegaan
+          {% elif is_state('input_boolean.erisgebeld','off') %}
+          Stil
+          {% endif %}

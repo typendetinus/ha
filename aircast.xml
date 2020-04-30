@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<aircast>
+<common>
+<enabled>1</enabled>
+<stop_receiver>0</stop_receiver>
+<media_volume>1.0000</media_volume>
+<latency></latency>
+<codec>flac</codec>
+<artwork></artwork>
+<drift>0</drift>
+<metadata>1</metadata>
+</common>
+<main_log>info</main_log>
+<cast_log>info</cast_log>
+<util_log>warn</util_log>
+<log_limit>-1</log_limit>
+<device>
+<udn>4361eee37487fa3744f30863f705f383</udn>
+<name>Slaapkamer Hub+</name>
+<mac>cc:cc:d8:72:f9:52</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>5a8ad85bff565eccaca50dde01d25ccc</udn>
+<name>Zolder+</name>
+<mac>cc:cc:2a:97:4c:80</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>0debcd561820e22070dcf61f8487e09d</udn>
+<name>Stereo+</name>
+<mac>cc:cc:e4:09:7d:80</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>C2E35834-C0CA-4EA8-94B8-E2CB9D3D494E</udn>
+<name>huis+</name>
+<mac>cc:cc:a0:f7:2d:1e</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>69ae72d251f80c4e4a4299e1e7d3c5c9</udn>
+<name>Logeerkamer Google Home+</name>
+<mac>cc:cc:13:50:07:0a</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>82ad036c03a9e73276b7040565ea2afe</udn>
+<name>Google Home Woonkamer+</name>
+<mac>cc:cc:4c:b4:62:45</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>b1cb51e107c19dec9477b65b04459d20</udn>
+<name>Slaapkamer Google Home+</name>
+<mac>cc:cc:8f:f6:d1:e5</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>e3315b5e1a341782746ce967ed49743c</udn>
+<name>Woonkamer Cast+</name>
+<mac>cc:cc:83:09:e6:ac</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>0cd44df3a12bc099ecafacef227c66d5</udn>
+<name>Logeerkamer Cast+</name>
+<mac>cc:cc:2d:22:ed:a1</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>b11bb3feb436cc344b063a748a037ad2</udn>
+<name>Slaapkamer Cast+</name>
+<mac>cc:cc:fc:e3:54:33</mac>
+<enabled>1</enabled>
+</device>
+<device>
+<udn>be0568cadabe1831cac87365a6c623a2</udn>
+<name>Kantoor hub+</name>
+<mac>cc:cc:b8:c0:38:55</mac>
+<enabled>1</enabled>
+</device>
+</aircast>

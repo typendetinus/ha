@@ -1,0 +1,38 @@
+  - id: wifi_deurbel_afwezig
+    alias: "Laat weten of de deurbel gaat"
+    initial_state: true
+    trigger:
+      platform: mqtt
+      topic: doorbellsensor/status
+    action:
+      - service: script.turn_on
+        data_template:
+          entity_id: >-
+            {% if is_state('person.martijn', 'home') %}
+              script.deurbel_thuis
+            {% else %}
+              script.deurbel_niet_thuis
+            {% endif %}
+
+  - id: deurbel_melding
+    alias: "Registreer aanbellen"
+    initial_state: true
+    trigger:
+      platform: numeric_state
+      entity_id: counter.deurbel_teller
+      above: 0
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.erisgebeld
+
+  - id: deurbel_teller_reset
+    alias: "Reset de deurbel teller"
+    initial_state: true
+    trigger:
+      platform: time
+      at: "00:00:00"
+    action:
+      - service: counter.reset
+        entity_id: counter.deurbel_teller
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.erisgebeld

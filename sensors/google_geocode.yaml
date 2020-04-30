@@ -1,0 +1,13 @@
+  - platform: google_geocode
+    name: Positie Auto
+    origin: device_tracker.audi_batmobil_9000
+    options: formatted_address
+    display_zone: hide
+    api_key: !secret google_geo_api
+
+  - platform: google_geocode
+    name: Positie Martijn
+    origin: device_tracker.iphone_van_martijn
+    options: formatted_address
+    display_zone: hide
+    api_key: !secret google_geo_api

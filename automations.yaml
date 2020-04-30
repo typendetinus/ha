@@ -1,0 +1,15 @@
+- id: '1571391535557'
+  alias: Huis Alarm Afwezig
+  description: Alarm bij beweging indien niet thuis
+  trigger:
+  - entity_id: binary_sensor.beneden_hal_sensor_motion
+    platform: state
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: alarm_control_panel.ha_alarm
+    state: armed_away
+  action:
+  - data:
+      message: ALARM!!! BEWEGING IN DE HAL
+    service: notify.ios_iphone_van_martijn

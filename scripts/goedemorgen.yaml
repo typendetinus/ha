@@ -1,0 +1,36 @@
+goedemorgen:
+    alias: Goedemorgen
+    sequence:
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer_lamp_rechts
+          brightness: 1
+          rgb_color: [98,19,0]
+      - delay:
+          seconds: 5.00
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer_lamp_links
+          brightness: 1
+          rgb_color: [249,123,0]
+      - delay:
+          seconds: 5.00
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer_lamp_midden
+          brightness: 1
+          rgb_color: [249,123,0]
+      - delay:
+          seconds: 10.00
+      - service: light.turn_on
+        data:
+          entity_id: light.slaapkamer
+          brightness: 254
+          rgb_color: [255,210,129]
+          transition: 30
+      - delay:
+          seconds: 40.00
+      - service: tts.google_cloud_say
+        entity_id: media_player.slaapkamer_hub
+        data:        
+          message: "Goedemorgen Ellen en Martijn,,,,,, Het is tijd om op te staan en lekker naar beneden te gaan om koffie te zetten"

@@ -1,0 +1,17 @@
+  deurbel_thuis:
+    alias: Deurbel thuis
+    sequence:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.erisgebeld
+      - service: media_player.volume_set
+        data:
+          entity_id: media_player.huis
+          volume_level: 0.6
+      - service: tts.google_cloud_say
+        entity_id: media_player.huis
+        data:
+          message: 'Martijn, let op...... Er staat iemand aan de deur'
+      - service: media_player.volume_set
+        data:
+          entity_id: media_player.huis
+          volume_level: 0.2

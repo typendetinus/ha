@@ -1,0 +1,18 @@
+  slaap_mode_uit:
+    alias: Haal huis uit slaap modus
+    sequence:
+      - service: input_boolean.turn_off
+        data:
+          entity_id: input_boolean.slaap_mode_dummy
+      - service: tts.google_cloud_say
+        entity_id: media_player.slaapkamer_hub
+        data:
+          message: 'Slaapstand is uitgezet'
+          language: 'nl'
+      - service: switch.turn_off
+        entity_id:
+          - switch.bedsensor
+      - service: climate.set_preset_mode
+        data:
+          entity_id: climate.living_room
+          preset_mode: eco  

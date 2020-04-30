@@ -1,0 +1,7 @@
+  - platform: version
+
+  - platform: template
+    sensors:
+      laatste_versie:
+        friendly_name: "Laatste HA release"
+        value_template: "{{ state_attr('binary_sensor.updater', 'newest_version') }}"

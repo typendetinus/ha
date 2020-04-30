@@ -1,0 +1,7 @@
+  - platform: qnap
+    host: 10.0.1.101
+    username: !secret qnap_user
+    password: !secret qnap_password
+    monitored_conditions:
+      - volume_size_used
+      - status
