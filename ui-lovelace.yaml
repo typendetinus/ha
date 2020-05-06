@@ -129,13 +129,20 @@ views:
       - type: custom:weather-card
         entity: weather.weersverwachting
         icons: "/local/icons/weather_icons/animated/"
-      - type: custom:calendar-card
-        title: Agenda
-        numberofDays: 14
-        entities:
-          - calendar.martijn_kalf_gmail_com
-          - calendar.ellen_en_martijn
-          - calendar.feestdagen_in_nederland
+      - type: vertical-stack
+        cards:
+        - type: custom:calendar-card
+          title: Agenda
+          numberofDays: 14
+          entities:
+            - calendar.martijn_kalf_gmail_com
+            - calendar.ellen_en_martijn
+            - calendar.feestdagen_in_nederland
+        - type: custom:calendar-card
+          title: Vuil Ophaal
+          numberofDays: 7
+          entities:
+            - calendar.avalex
       - type: entities
         title: Wekker
         show_header_toggle: false
@@ -144,11 +151,6 @@ views:
           - input_boolean.alarm_clock_status
           - input_number.alarm_clock_hour
           - input_number.alarm_clock_minute
-      - type: custom:calendar-card
-        title: Vuil Ophaal
-        numberofDays: 7
-        entities:
-          - calendar.avalex
       - type: custom:jumbo-card
         title: Boodschappen
         time_slots_delivery: sensor.jumbo_delivery_time_slots
