@@ -115,6 +115,8 @@ resources:
   url: /local/community/upcoming-media-card/upcoming-media-card.js
 - type: module
   url: /local/community/analog-clock-card/analog-clock-card.js
+- type: module
+  url: /local/community/lovelace-jumbo-card/jumbo-card.js
 
 views:
   - title: Martijn
@@ -142,47 +144,20 @@ views:
           - input_boolean.alarm_clock_status
           - input_number.alarm_clock_hour
           - input_number.alarm_clock_minute
-      - type: glance
-        show_icon: true
-        show_name: true
-        show_state: true
-        title: Corona Wereldwijd
-        entities:
-          - entity: sensor.worldwide_coronavirus_confirmed
-            icon: 'mdi:emoticon-neutral-outline'
-            name: Bevestigd
-          - entity: sensor.worldwide_coronavirus_current
-            icon: 'mdi:emoticon-frown-outline'
-            name: Huidig
-          - entity: sensor.worldwide_coronavirus_recovered
-            icon: 'mdi:emoticon-happy-outline'
-            name: Genezen
-          - entity: sensor.worldwide_coronavirus_deaths
-            icon: 'mdi:emoticon-dead-outline'
-            name: Doden
-      - type: glance
-        show_icon: true
-        show_name: true
-        show_state: true
-        title: Corona Nederland
-        entities:
-          - entity: sensor.netherlands_coronavirus_confirmed
-            icon: 'mdi:emoticon-neutral-outline'
-            name: Bevestigd
-          - entity: sensor.netherlands_coronavirus_current
-            icon: 'mdi:emoticon-frown-outline'
-            name: Huidig
-          - entity: sensor.netherlands_coronavirus_recovered
-            icon: 'mdi:emoticon-happy-outline'
-            name: Genezen
-          - entity: sensor.netherlands_coronavirus_deaths
-            icon: 'mdi:emoticon-dead-outline'
-            name: Doden
       - type: custom:calendar-card
         title: Vuil Ophaal
         numberofDays: 7
         entities:
           - calendar.avalex
+      - type: custom:jumbo-card
+        title: Boodschappen
+        time_slots_delivery: sensor.jumbo_delivery_time_slots
+        time_slots_delivery_days: 2
+        time_slots_pick_up: sensor.jumbo_pick_up_time_slots
+        time_slots_pick_up_days: 2
+        deliveries: sensor.jumbo_delivery
+        pick_ups: sensor.jumbo_pick_up
+        basket: sensor.jumbo_basket
     icon: 'mdi:account'
 
   - badges: []
