@@ -1,34 +1,41 @@
-2020-05-25 19:21:11 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 19:21:11 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for apple_tv which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 19:21:11 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for audiconnect which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 19:21:12 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 19:21:12 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
-2020-05-25 19:21:17 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 176: headers=self._headers, json=app_details)
-2020-05-25 19:21:19 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:21:19 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 221: r = requests.post('https://%s-disp.coolkit.cc:8080/dispatch/app' % self._api_region, headers=self._headers)
-2020-05-25 19:21:22 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs.
-2020-05-25 19:21:24 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for google_geocode which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 19:21:24 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for plex_recently_added which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:25 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 19:21:27 WARNING (MainThread) [homeassistant.setup] Setup of group is taking over 10 seconds.
-2020-05-25 19:21:28 WARNING (MainThread) [homeassistant.components.switch] SwitchDevice is deprecated, modify SonoffSwitch to extend SwitchEntity
-2020-05-25 19:21:28 WARNING (MainThread) [homeassistant.components.switch] SwitchDevice is deprecated, modify SonoffDebugSwitch to extend SwitchEntity
-2020-05-25 19:21:28 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:21:35 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to obtain the vehicle climatisation state for WAUZZZF48GA044048: 403, message='Forbidden', url='https://msg.volkswagen.de/fs-car/bs/climatisation/v1/Audi/DE/vehicles/WAUZZZF48GA044048/climater
-2020-05-25 19:21:35 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to obtain the vehicle charger state for WAUZZZF48GA044048: 403, message='Forbidden', url='https://msg.volkswagen.de/fs-car/bs/batterycharge/v1/Audi/DE/vehicles/WAUZZZF48GA044048/charger
-2020-05-25 19:21:35 WARNING (MainThread) [homeassistant.components.binary_sensor] BinarySensorDevice is deprecated, modify AudiSensor to extend BinarySensorEntity
-2020-05-25 19:21:35 WARNING (MainThread) [homeassistant.components.lock] LockDevice is deprecated, modify AudiLock to extend LockEntity
-2020-05-25 19:21:46 WARNING (MainThread) [homeassistant.components.media_player] MediaPlayerDevice is deprecated, modify AppleTvDevice to extend MediaPlayerEntity
-2020-05-25 19:21:46 WARNING (MainThread) [homeassistant.components.remote] RemoteDevice is deprecated, modify AppleTVRemote to extend RemoteEntity
-2020-05-25 19:21:51 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-05-25 20:16:38 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for apple_tv which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-05-25 20:16:38 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for audiconnect which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-05-25 20:16:38 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-05-25 20:16:42 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
+2020-05-25 20:16:45 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=117 from 2020-05-25 17:21:13)
+2020-05-25 20:16:58 ERROR (MainThread) [homeassistant.config] Invalid config for [scene]: expected dict for dictionary value @ data['states'][0]['entities']. Got None. (See /config/scenes/scenes_config.yaml, line 39). Please check the docs at https://www.home-assistant.io/integrations/scene
+2020-05-25 20:17:03 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs.
+2020-05-25 20:17:03 WARNING (MainThread) [homeassistant.setup] Setup of group is taking over 10 seconds.
+2020-05-25 20:17:06 WARNING (MainThread) [homeassistant.setup] Setup of lovelace is taking over 10 seconds.
+2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for google_geocode which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for plex_recently_added which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of input_boolean is taking over 10 seconds.
+2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of zone is taking over 10 seconds.
+2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of coronavirus is taking over 10 seconds.
+2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of counter is taking over 10 seconds.
+2020-05-25 20:17:09 ERROR (MainThread) [homeassistant.components.coronavirus] Timeout fetching coronavirus data
+2020-05-25 20:17:09 WARNING (MainThread) [homeassistant.setup] Setup of input_datetime is taking over 10 seconds.
+2020-05-25 20:17:09 ERROR (MainThread) [glances_api] Can not load data from Glances API
+2020-05-25 20:17:09 WARNING (MainThread) [homeassistant.config_entries] Config entry for glances not ready yet. Retrying in 5 seconds.
+2020-05-25 20:17:10 ERROR (MainThread) [glances_api] Can not load data from Glances API
+2020-05-25 20:17:10 WARNING (MainThread) [homeassistant.config_entries] Config entry for glances not ready yet. Retrying in 5 seconds.
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-05-25 20:17:14 WARNING (MainThread) [homeassistant.components.binary_sensor] Setup of binary_sensor platform ping is taking over 10 seconds.
+2020-05-25 20:17:22 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to obtain the vehicle climatisation state for WAUZZZF48GA044048: 403, message='Forbidden', url='https://msg.volkswagen.de/fs-car/bs/climatisation/v1/Audi/DE/vehicles/WAUZZZF48GA044048/climater
+2020-05-25 20:17:23 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to obtain the vehicle charger state for WAUZZZF48GA044048: 403, message='Forbidden', url='https://msg.volkswagen.de/fs-car/bs/batterycharge/v1/Audi/DE/vehicles/WAUZZZF48GA044048/charger
+2020-05-25 20:17:23 WARNING (MainThread) [homeassistant.components.binary_sensor] BinarySensorDevice is deprecated, modify AudiSensor to extend BinarySensorEntity
+2020-05-25 20:17:23 WARNING (MainThread) [homeassistant.components.lock] LockDevice is deprecated, modify AudiLock to extend LockEntity
+2020-05-25 20:17:27 WARNING (MainThread) [homeassistant.components.media_player] MediaPlayerDevice is deprecated, modify AppleTvDevice to extend MediaPlayerEntity
+2020-05-25 20:17:27 WARNING (MainThread) [homeassistant.components.remote] RemoteDevice is deprecated, modify AppleTVRemote to extend RemoteEntity
+2020-05-25 20:17:32 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -74,8 +81,41 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:21:55 WARNING (MainThread) [homeassistant.setup] Setup of xiaomi_aqara is taking over 10 seconds.
-2020-05-25 19:21:58 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-05-25 20:17:33 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 288, in async_add_entities
+    for entity in new_entities
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 285, in <listcomp>
+    self._async_add_entity(  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 22, in <genexpr>
+    for info_type in SENSORS
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 37, in __init__
+    self.name = f"{coordinator.data[country].country} Coronavirus {info_type}"
+TypeError: 'NoneType' object is not subscriptable
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:46 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:46 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:47 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:47 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-05-25 20:17:57 WARNING (MainThread) [homeassistant.components.ps4.media_player] PS4 could not be reached
+2020-05-25 20:18:00 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -121,31 +161,8 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:22:02 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:02 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:02 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:02 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:03 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:04 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:08 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:08 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:08 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:08 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 19:22:19 WARNING (MainThread) [homeassistant.components.ps4.media_player] PS4 could not be reached
-2020-05-25 19:22:20 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:22:20 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-05-25 20:18:08 ERROR (MainThread) [frontend.js.latest.202005194] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
+2020-05-25 20:18:20 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -191,7 +208,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:22:26 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-05-25 20:18:27 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -237,349 +254,21 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:22:46 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:23:20 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:23:42 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:24:10 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:24:20 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:25:21 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:26:22 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:26:24 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:27:23 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:28:24 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:29:25 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:30:26 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:31:27 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:31:30 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:32:28 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:33:29 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:34:30 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:35:31 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:36:32 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:36:35 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 19:37:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.plex_recently_added is taking over 10 seconds
-2020-05-25 19:37:32 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:37:43 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
-2020-05-25 19:38:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
-2020-05-25 19:38:05 ERROR (SyncWorker_8) [xiaomi_gateway] Cannot connect to Gateway
-2020-05-25 19:38:05 ERROR (SyncWorker_8) [xiaomi_gateway] No data in response from hub None
-2020-05-25 19:38:33 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:39:34 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:40:35 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:41:36 WARNING (MainThread) [homeassistant.util.async_] Detected I/O inside the event loop. This is causing stability issues. Please report issue to the custom component author for sonoff doing I/O at custom_components/sonoff/__init__.py, line 374: ), headers=self._headers)
-2020-05-25 19:41:40 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
-    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
-    raise exceptions[0]
-  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
-    await self.sock_connect(sock, address)
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
-    return await fut
-  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
-    raise OSError(err, f'Connect call failed {address}')
-ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
-    await self._connect(conf)
-  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
-    self.atv = await connect(conf, self.hass.loop, session=session)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
-    await atv.connect()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
-    await self._requester.login()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
-    resp = await self._do(_login_request, is_login=True)
-  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
-    raise ex
-  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
-    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
-    timeout=real_timeout
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
-    proto = await self._create_connection(req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
-    req, traces, timeout)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
-    raise last_exc
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
-    req=req, client_error=client_error)
-  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
-    raise client_error(req.connection_key, exc) from exc
-aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-05-25 20:18:47 WARNING (SyncWorker_16) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-05-25 20:22:09 ERROR (MainThread) [frontend.js.latest.202005194] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
+2020-05-25 20:28:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
+2020-05-25 20:28:32 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
+2020-05-25 20:28:32 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
+2020-05-25 20:29:48 ERROR (MainThread) [frontend.js.latest.202005194] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
+2020-05-25 20:30:40 WARNING (SyncWorker_15) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-05-25 20:31:38 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
+2020-05-25 20:33:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
+2020-05-25 20:33:39 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
+2020-05-25 20:33:39 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
+2020-05-25 20:38:18 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
+2020-05-25 20:38:18 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
+2020-05-25 20:38:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_raam is taking over 10 seconds
+2020-05-25 20:38:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.dakterras_deur is taking over 10 seconds
+2020-05-25 20:38:49 ERROR (SyncWorker_12) [xiaomi_gateway] Cannot connect to Gateway
+2020-05-25 20:38:49 ERROR (SyncWorker_12) [xiaomi_gateway] No data in response from hub None
+2020-05-25 20:40:56 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration

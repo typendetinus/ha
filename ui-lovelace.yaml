@@ -296,6 +296,10 @@ views:
             entity: input_boolean.bij_ellen
             icon: mdi:face-woman
           - <<: *custom_button_media_active_glow
+            name: Waakstand
+            entity: input_boolean.waakstand
+            icon: mdi:home-edit-outline
+          - <<: *custom_button_media_active_glow
             name: Deurbel
             entity: sensor.er_is_gebeld
             icon: mdi:alarm-bell

@@ -36,6 +36,8 @@
             brightness_pct: 10
         switch.woonkamer_radio:
             state: on
+        input_boolean.waakstand:
+            state: on
 
   - name: Slaapstand
     entities:

@@ -1,0 +1,14 @@
+  - alias: "Waakstand verlichting uit"
+    initial_state: 'on'
+    trigger:
+      platform: state
+      entity_id: input_boolean.waakstand
+      to: 'on'
+    condition:
+      condition: time
+      after: '23:37'
+    action:
+      - service: switch.turn_off
+        entity_id: switch.woonkamer_radio
+      - service: light.turn_off
+        entity_id: all

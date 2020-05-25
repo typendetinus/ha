@@ -179,6 +179,8 @@ input_boolean:
     initial: off
   bij_ellen:
     initial: off
+  waakstand:
+    initial: off
 
 input_datetime:
   alarm_time:
