@@ -6,7 +6,7 @@
       - service: media_player.volume_set
         data:
           entity_id: media_player.huis
-          volume_level: 0.6
+          volume_level: 0.9
       - service: tts.google_cloud_say
         entity_id: media_player.huis
         data:

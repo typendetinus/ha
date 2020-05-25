@@ -1,4 +1,0 @@
-    - platform: jumbo
-      username: !secret jumbo_user
-      password: !secret jumbo_password
-      type: "both"

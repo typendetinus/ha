@@ -5,21 +5,16 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id: binary_sensor.voordeur 
         state: 'on'
     action:
-      service: notify.ios_iphone_van_martijn
+      service: notify.mobile_app_iphone_van_martijn
       data:
+        title: 'DEUR OPEN'
         message: 'Let op! Voordeur is nog open'
-        data:
-          push:
-            badge: 0
-            category: "opendoor"
-          action_data:
-            entity_id: binary_sensor.voordeur
 
   - id: action_push_message
     alias: 'Tuindeur is nog open'
@@ -28,7 +23,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id: binary_sensor.tuindeur
@@ -36,13 +31,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
+        title: 'DEUR OPEN'
         message: 'Let op! Tuindeur is nog open'
-        data:
-          push:
-            badge: 0
-            category: "opendoor"
-          action_data:
-            entity_id: binary_sensor.tuindeur
 
   - id: action_push_message
     alias: 'Terrasdeur is nog open'
@@ -51,7 +41,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id: binary_sensor.terrasdeur
@@ -59,10 +49,5 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
+        title: 'DEUR OPEN'
         message: 'Let op! Terrasdeur is nog open'
-        data:
-          push:
-            badge: 0
-            category: "opendoor"
-          action_data:
-            entity_id: binary_sensor.terrasdeur

@@ -1,0 +1,33 @@
+- id: papier_melden
+  alias: "Papier dag melden"
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: calendar.avalex
+    to: 'on'
+  condition:
+      - condition: template
+        value_template: "{{is_state_attr('calendar.avalex', 'message', 'Papier en karton') }}"
+  action:
+    - delay: 7:00
+    - service: tts.google_cloud_say
+      entity_id: media_player.google_home_woonkamer
+      data:
+        message: 'Let op....... Vandaag wordt de blauwe papierbak opgehaald'
+
+- id: plastic_melden
+  alias: "Plastic dag melden"
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: calendar.avalex
+    to: 'on'
+  condition:
+      - condition: template
+        value_template: "{{is_state_attr('calendar.avalex', 'message', 'Plastic, metalen verpakkingen en drankenkartons (PMD)') }}"
+  action:
+    - delay: 7:00
+    - service: tts.google_cloud_say
+      entity_id: media_player.google_home_woonkamer
+      data:
+        message: 'Let op....... Vandaag wordt de grijze plasticbak opgehaald'

@@ -115,6 +115,10 @@ resources:
   url: /local/community/upcoming-media-card/upcoming-media-card.js
 - type: module
   url: /local/community/analog-clock-card/analog-clock-card.js
+- type: module
+  url: /local/community/stack-in-card/stack-in-card.js
+- type: module
+  url: /local/community/lovelace-time-picker-card/time-picker-card.js
 
 views:
   - title: Martijn
@@ -127,7 +131,8 @@ views:
       - type: custom:weather-card
         entity: weather.weersverwachting
         icons: "/local/icons/weather_icons/animated/"
-      - type: vertical-stack
+      - type: custom:stack-in-card
+        mode: vertical
         cards:
         - type: custom:calendar-card
           title: Agenda
@@ -141,14 +146,18 @@ views:
           numberofDays: 7
           entities:
             - calendar.avalex
-      - type: entities
-        title: Wekker
-        show_header_toggle: false
-        entities:
-          - sensor.alarm_clock_time
-          - input_boolean.alarm_clock_status
-          - input_number.alarm_clock_hour
-          - input_number.alarm_clock_minute
+      - type: custom:stack-in-card
+        mode: vertical
+        cards:
+        - type: custom:time-picker-card
+          entity: input_datetime.alarm_time
+          layout:
+            name: inside
+            align_controls: right
+        - type: entities
+          entities:
+            - input_boolean.alarm_clock_status
+          
     icon: 'mdi:account'
 
   - badges: []
@@ -282,14 +291,6 @@ views:
           type: custom:mini-graph-card
       - type: horizontal-stack
         cards:
-          - <<: *custom_button_media_active_glow
-            name: Afwezig
-            entity: input_boolean.huisbewaking
-            icon: mdi:home-export-outline
-          - <<: *custom_button_media_active_glow
-            name: Bij Ellen
-            entity: switch.bij_ellen
-            icon: mdi:face-woman
           - <<: *custom_button_media_active_glow
             name: Deurbel
             entity: sensor.er_is_gebeld

@@ -1,0 +1,14 @@
+  - id: stuur_berichtje
+    alias: "Zet Kubus neer voor berichtje"
+    initial_state: true
+    trigger:
+      platform: event
+      event_type: xiaomi_aqara.cube_action
+      event_data:
+        entity_id: binary_sensor.cube_slaapkamer
+        action_type: tap_twice
+    action:
+      - service: notify.mobile_app_iphone_van_martijn
+        data:
+          title: 'KUBUS ZEGT AUW!'
+          message: 'De kubus voelt zich gekwetst'

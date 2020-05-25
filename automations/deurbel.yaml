@@ -13,7 +13,13 @@
             {% else %}
               script.deurbel_niet_thuis
             {% endif %}
-
+      - service: media_player.media_play_pause
+        data_template:
+          entity_id: >-
+            {% if is_state('media_player.woonkamer_apple_tv', 'playing') %}
+              media_player.woonkamer_apple_tv
+            {% endif %}
+          
   - id: deurbel_melding
     alias: "Registreer aanbellen"
     initial_state: true

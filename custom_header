@@ -1,0 +1,18 @@
+background: var(--background-image)
+custom_header:
+  background: rgba(155, 155, 155, 0.25)
+  compact_mode: true
+  swipe_animate: fade
+  swipe_prevent_default: true
+decluttering_templates:
+  automation_template:
+    card:
+      card:
+        show_header_toggle: false
+        title: '[[name]] automations'
+        type: entities
+      filter:
+        include:
+        - entity_id: automation.[[slug]]*
+      sort: entity_id
+      type: custom:auto-entities

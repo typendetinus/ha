@@ -1,0 +1,14 @@
+  - id: ik_wil_koffie
+    alias: "Schud kubus voor koffie"
+    initial_state: true
+    trigger:
+      platform: event
+      event_type: xiaomi_aqara.cube_action
+      event_data:
+        entity_id: binary_sensor.cube_slaapkamer
+        action_type: shake_air
+    action:
+      - service: tts.google_cloud_say
+        entity_id: media_player.huis
+        data:
+          message: "Zeg Martijn, waar is mijn koffie ?"

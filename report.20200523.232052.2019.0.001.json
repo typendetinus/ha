@@ -1,0 +1,342 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200523.232052.2019.0.001.json",
+    "dumpEventTime": "2020-05-23T23:20:53Z",
+    "dumpEventTimeStamp": "1590268853948",
+    "processId": 2019,
+    "cwd": "/config",
+    "commandLine": [
+      "/usr/local/lib/code-server/node",
+      "/root/.code-server/extensions/keesschollaart.vscode-home-assistant-1.6.1/out/server/server.js",
+      "--node-ipc",
+      "--clientProcessId=1978"
+    ],
+    "nodejsVersion": "v12.14.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.14.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.15.0-99-generic",
+    "osVersion": "#100-Ubuntu SMP Wed Apr 22 20:32:56 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Celeron(R) CPU  J1900  @ 1.99GHz",
+        "speed": 1718,
+        "user": 553741600,
+        "nice": 1637900,
+        "sys": 182979100,
+        "idle": 5818097100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Celeron(R) CPU  J1900  @ 1.99GHz",
+        "speed": 1785,
+        "user": 533404200,
+        "nice": 1411600,
+        "sys": 181204600,
+        "idle": 5818750400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Celeron(R) CPU  J1900  @ 1.99GHz",
+        "speed": 1653,
+        "user": 496253500,
+        "nice": 1466500,
+        "sys": 174415100,
+        "idle": 5950907200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Celeron(R) CPU  J1900  @ 1.99GHz",
+        "speed": 1801,
+        "user": 493780500,
+        "nice": 1622600,
+        "sys": 172943500,
+        "idle": 5957822500,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "02:42:ac:1e:21:02",
+        "address": "172.30.33.2",
+        "netmask": "255.255.254.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "a0d7b954-vscode"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b04935",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x00000000009db9e3",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000b39f1e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000b3a299",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000ce5635",
+      "symbol": " [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000ce5cc6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000cf1b5a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000cf2a65",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000cf5478",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000cbbda7",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000000ff1e0b",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/local/lib/code-server/node]"
+    },
+    {
+      "pc": "0x0000000001374fd9",
+      "symbol": " [/usr/local/lib/code-server/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2151071744,
+    "totalCommittedMemory": 2149660976,
+    "usedMemory": 2121629496,
+    "availableMemory": 49575536,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 3145728,
+        "committedMemory": 2361120,
+        "capacity": 1571232,
+        "used": 949168,
+        "available": 622064
+      },
+      "old_space": {
+        "memorySize": 2073669632,
+        "committedMemory": 2073386936,
+        "capacity": 2055897808,
+        "used": 2055488696,
+        "available": 409112
+      },
+      "code_space": {
+        "memorySize": 1212416,
+        "committedMemory": 1099680,
+        "capacity": 989184,
+        "used": 989184,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 8916992,
+        "committedMemory": 8915840,
+        "capacity": 730400,
+        "used": 730400,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 63815680,
+        "committedMemory": 63815680,
+        "capacity": 63436136,
+        "used": 63436136,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3616,
+        "used": 3616,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1571232,
+        "used": 0,
+        "available": 1571232
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 679.965,
+    "kernelCpuSeconds": 27.5105,
+    "cpuConsumptionPercent": 133.738,
+    "maxRss": 2236432384,
+    "pageFaults": {
+      "IORequired": 148,
+      "IONotRequired": 2815090
+    },
+    "fsActivity": {
+      "reads": 21024,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 305.273,
+    "kernelCpuSeconds": 14.5612,
+    "cpuConsumptionPercent": 60.4601,
+    "fsActivity": {
+      "reads": 19872,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "__BASHIO_BIN": "/usr/lib/bashio/bashio",
+    "HOSTNAME": "a0d7b954-vscode",
+    "SHLVL": "0",
+    "HOME": "/root",
+    "__BASHIO_LIB_DIR": "/usr/lib/bashio",
+    "CWD": "/",
+    "S6_CMD_WAIT_FOR_SERVICES": "1",
+    "TERM": "xterm-256color",
+    "HASSIO_TOKEN": "b5c8ef2b3eea425ba4d0469543c860119e1bf8e174703310b3f0e0b54241b6015fa32523f0e63823e8679ecf6af9f8861f20a3b55cae8d62",
+    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "S6_BEHAVIOUR_IF_STAGE2_FAILS": "2",
+    "LANG": "en_US.UTF-8",
+    "HASS_TOKEN": "b5c8ef2b3eea425ba4d0469543c860119e1bf8e174703310b3f0e0b54241b6015fa32523f0e63823e8679ecf6af9f8861f20a3b55cae8d62",
+    "DEBIAN_FRONTEND": "noninteractive",
+    "HASS_SERVER": "http://supervisor/core",
+    "LC_ALL": "en_US.UTF-8",
+    "PWD": "/run/s6/services/code",
+    "SUPERVISOR_TOKEN": "b5c8ef2b3eea425ba4d0469543c860119e1bf8e174703310b3f0e0b54241b6015fa32523f0e63823e8679ecf6af9f8861f20a3b55cae8d62",
+    "TZ": "Europe/Amsterdam",
+    "CODE_SERVER_PARENT_PID": "453",
+    "NODE_OPTIONS": "  --max_old_space_size=2048",
+    "VSCODE_LOGS": "/data/vscode/logs/20200522T151942",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "PIPE_LOGGING": "true",
+    "VERBOSE_LOGGING": "true",
+    "VSCODE_EXTHOST_WILL_SEND_SOCKET": "true",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "VSCODE_LOG_STACK": "false",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"en\",\"availableLanguages\":{}}",
+    "VSCODE_IPC_HOOK_CLI": "/tmp/vscode-ipc-db0f5628-8595-4713-ae0b-9b8d62a7def0.sock",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2"
+  ]
+}

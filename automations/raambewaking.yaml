@@ -5,7 +5,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id: binary_sensor.slaapkamer_raam
@@ -13,13 +13,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Slaapkamer raam is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"
-          action_data:
-            entity_id: binary_sensor.slaapkamer_raam
+        title: "RAAM OPEN"
+        message: "Let op! Slaapkamer raam is nog open"
 
   - id: action_push_message
     alias: 'Logeerkamer raam is nog open'
@@ -28,7 +23,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id: binary_sensor.logeerkamer_raam
@@ -36,13 +31,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Logeerkamer raam is is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"
-          action_data:
-            entity_id: binary_sensor.logeerkamer_raam
+        title: "RAAM OPEN"
+        message: "Let op! Logeerkamer raam is is nog open"
 
   - id: action_push_message
     alias: 'Zolder raam links is nog open'
@@ -51,7 +41,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id:  binary_sensor.zolderraam_links
@@ -59,13 +49,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Zolder raam links is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"
-          action_data:
-            entity_id:  binary_sensor.zolderraam_links
+        title: "RAAM OPEN"
+        message: "Let op! Zolder raam links is nog open"
 
   - id: action_push_message
     alias: 'Zolder raam rechts is nog open'
@@ -74,7 +59,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id:  binary_sensor.zolderraam_rechts
@@ -82,13 +67,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Zolder raam rechts is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"    
-          action_data:
-            entity_id:  binary_sensor.zolderraam_rechts
+        title: "RAAM OPEN"
+        message: "Let op! Zolder raam rechts is nog open"
 
   - id: action_push_message
     alias: 'Kantoor raam is nog open'
@@ -97,7 +77,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id:  binary_sensor.kantoor_raam
@@ -105,13 +85,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Kantoor raam is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"
-          action_data:
-            entity_id:  binary_sensor.kantoor_raam
+        title: "RAAM OPEN"
+        message: "Let op! Kantoor raam is nog open"
 
   - id: action_push_message
     alias: 'Keuken raam is nog open'
@@ -120,7 +95,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id:  binary_sensor.keuken_raam
@@ -128,13 +103,8 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Keukenraam is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"
-          action_data:
-            entity_id:  binary_sensor.keuken_raam
+        title: "RAAM OPEN"
+        message: "Let op! Keukenraam is nog open"
 
   - id: action_push_message
     alias: 'Woonkamer raam is nog open'
@@ -143,7 +113,7 @@
       - platform: state
         entity_id: person.martijn
         from: 'home'
-        to: 'not_home'
+        to: 'away'
     condition:
       - condition: state
         entity_id:  binary_sensor.woonkamer_raam
@@ -151,10 +121,5 @@
     action:
       service: notify.mobile_app_iphone_van_martijn
       data:
-        message: 'Let op! Woonkamer raam is nog open'
-        data:
-          push:
-            badge: 0
-            category: "openwindow"
-          action_data:
-            entity_id:  binary_sensor.woonkamer_raam
+        title: "RAAM OPEN"
+        message: "Let op! Woonkamer raam is nog open"

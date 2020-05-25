@@ -1,5 +1,5 @@
   - platform: foscam
-    ip: 10.0.1.200
+    ip: 10.0.1.245
     username: !secret foscam_user
     password: !secret foscam_pwd
     name: Logeerkamer

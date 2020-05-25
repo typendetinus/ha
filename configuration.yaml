@@ -32,7 +32,7 @@ lovelace:
 frontend:
   themes: !include_dir_merge_named themes
 
-# Nest thermoestaat en protect configuratie
+# Nest thermostaat en protect configuratie
 nest:
   client_id: !secret nest_client
   client_secret: !secret nest_secret
@@ -46,6 +46,7 @@ spotify:
 homekit:
   filter:
     include_entities:
+    - switch.televisie_meubel
     - switch.boekenkast
     - switch.bed_sensor
     - switch.burolamp
@@ -90,6 +91,8 @@ homekit:
     - binary_sensor.logeerkamer_deur
     - binary_sensor.slaapkamer_deur
     - binary_sensor.tussendeur
+    - camera.woonkamer
+    - camera.logeerkamer
     
   entity_config:
     switch.boekenkast:
@@ -103,11 +106,6 @@ xiaomi_aqara:
   discovery_retry: 9
   gateways:
     - key: !secret xi_key
-
-tuya:
-  username: !secret tuya_user
-  password: !secret tuya_password
-  country_code: 31
 
 sonoff:
   username: !secret sonoff_user
@@ -187,8 +185,6 @@ input_number:
 
 input_boolean:
   alarm_clock_status:
-    initial: on
-  huisbewaking:
     initial: off
   romance_dummy:
     initial: off
@@ -198,16 +194,21 @@ input_boolean:
     initial: off
   erisgebeld:
     initial: off
-  bij_ellen:
+  bij-ellen:
     initial: off
+
+# New Alarm
+input_datetime:
+  alarm_time:
+    name: Wekker Tijd
+    has_date: false
+    has_time: true
 
 counter:
   deurbel_teller:
     initial: 0
     step: 1
 
-shopping_list:
-    
 binary_sensor:
   - platform: ping
     host: Martijns-iMac.martijn
@@ -218,22 +219,11 @@ binary_sensor:
     name: Printer
     scan_interval: 30
 
-spotcast:
-  username: !secret spotuser
-  password: !secret spotpwd
-
 glances:
   - host: 10.0.1.192
     version: 3
   - host: localhost
     version: 2
-
-mqtt:
-  broker: localhost
-  username: mqrt_user
-  password: !secret mqtt_pwd
-  discovery: true
-  discovery_prefix: homeassistant
 
 light:
   - platform: group
