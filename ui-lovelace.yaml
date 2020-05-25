@@ -292,6 +292,10 @@ views:
       - type: horizontal-stack
         cards:
           - <<: *custom_button_media_active_glow
+            name: Bij Ellen
+            entity: input_boolean.bij_ellen
+            icon: mdi:face-woman
+          - <<: *custom_button_media_active_glow
             name: Deurbel
             entity: sensor.er_is_gebeld
             icon: mdi:alarm-bell
@@ -823,9 +827,6 @@ views:
           - entity: switch.slaapkamer_chromecast
             name: Chromecast
             icon: mdi:google-chrome
-          - entity: switch.sonoff_10003d8d27
-            name: Ventilator
-            icon: mdi:fan
       - type: conditional                         
         conditions:                               
           - entity: switch.slaapkamer_appletv
