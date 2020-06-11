@@ -1,6 +1,6 @@
   - platform: google_geocode
     name: Positie Auto
-    origin: device_tracker.audi_batmobil_9000
+    origin: device_tracker.batmobil_9000_position
     options: formatted_address
     display_zone: hide
     api_key: !secret google_geo_api

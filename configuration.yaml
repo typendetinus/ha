@@ -107,6 +107,10 @@ xiaomi_aqara:
   gateways:
     - key: !secret xi_key
 
+sonoff:
+  username: !secret sonoff_user
+  password: !secret sonoff_password
+
 utility_meter:
   daily_power_offpeak:
     source: sensor.energy_consumption_tarif_1

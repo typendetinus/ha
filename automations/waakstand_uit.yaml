@@ -5,10 +5,13 @@
       entity_id: input_boolean.waakstand
       to: 'on'
     condition:
-      condition: time
-      after: '23:37'
+      condition: and
+      conditions:
+        - condition: time
+          after: '23:37'
+        - condition: state
+          entity_id: person.martijn
+          state: not_home
     action:
-      - service: switch.turn_off
-        entity_id: switch.woonkamer_radio
-      - service: light.turn_off
-        entity_id: all
+      service: scene.turn_off
+      entity_id: scene.woonkamer_on

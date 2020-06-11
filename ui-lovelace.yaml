@@ -124,15 +124,17 @@ views:
   - title: Martijn
     badges:
       - entity: person.martijn
-      - entity: device_tracker.audi_batmobil_9000
+      - entity: device_tracker.batmobil_9000_position
       - entity: sensor.battery_level_iphone
       - entity: sensor.batmobil_9000_tank_level
     cards:
-      - type: custom:weather-card
-        entity: weather.weersverwachting
-        icons: "/local/icons/weather_icons/animated/"
-      - type: custom:stack-in-card
-        mode: vertical
+    - type: custom:weather-card
+      entity: weather.weersverwachting
+      icons: "/local/icons/weather_icons/animated/"
+    - type: custom:stack-in-card
+      mode: vertical
+      cards:
+      - type: vertical-stack
         cards:
         - type: custom:calendar-card
           title: Agenda
@@ -146,8 +148,10 @@ views:
           numberofDays: 7
           entities:
             - calendar.avalex
-      - type: custom:stack-in-card
-        mode: vertical
+    - type: custom:stack-in-card
+      mode: vertical
+      cards:
+      - type: vertical-stack
         cards:
         - type: custom:time-picker-card
           entity: input_datetime.alarm_time
@@ -162,8 +166,12 @@ views:
 
   - badges: []
     cards:
-      - type: thermostat
+      - type: custom:simple-thermostat
         entity: climate.living_room
+        step_layout: row
+        name: false
+        control:
+          _headings: false
       - type: horizontal-stack
         cards:
         - color_thresholds_transition: smooth
@@ -196,7 +204,7 @@ views:
             name: true
             state: true
           type: custom:mini-graph-card
-      - type: horizontal-stack
+      - type: vertical-stack
         cards:
         - color_thresholds_transition: smooth
           entities:
@@ -207,7 +215,8 @@ views:
           line_width: 6
           points_per_hour: 0.5
           show:
-            extrema: false
+            extrema: true
+            average: true
             fill: fade
             labels: false
             name: true
@@ -229,7 +238,8 @@ views:
           line_width: 6
           points_per_hour: 0.5
           show:
-            extrema: false
+            extrema: true
+            average: true
             fill: fade
             labels: false
             name: true
@@ -393,7 +403,7 @@ views:
       - type: glance
         entities:
           - person.martijn
-          - device_tracker.audi_batmobil_9000
+          - device_tracker.batmobil_9000_position
 
       - type: picture-elements
         style: |
@@ -456,7 +466,7 @@ views:
           - type: state-label
             entity: sensor.batmobil_9000_mileage
             style: {color: white, left: 90%, top: 95%}
-      - type: horizontal-stack
+      - type: vertical-stack
         cards:
           - type: custom:mini-graph-card
             style: |
@@ -477,6 +487,8 @@ views:
             align_state: center
             show:
               graph: bar
+              extrema: true
+              average: true
             color_thresholds:
               - value: 50
                 color: "green"
@@ -484,7 +496,7 @@ views:
                 color: "orange"
               - value: 120
                 color: "red"
-            name: Ellen
+            name: Reistijd naar Ellen
           - type: custom:mini-graph-card
             style: |
               ha-card {
@@ -505,7 +517,9 @@ views:
             align_state: center
             show:
               graph: bar
-            name: Werk
+              extrema: true
+              average: true
+            name: Reistijd naar Werk
             color_thresholds:
               - value: 20
                 color: "green"
@@ -533,7 +547,9 @@ views:
             align_state: center
             show:
               graph: bar
-            name: Huis
+              extrema: true
+              average: true
+            name: Reistijd naar Huis
             color_thresholds:
               - value: 20
                 color: "green"
@@ -573,7 +589,7 @@ views:
         aspect_ratio: 16:9
         default_zoom: 16
         entities:
-          - device_tracker.audi_batmobil_9000
+          - device_tracker.batmobil_9000_position
           - person.martijn
     icon: 'mdi:car'
     title: Auto
@@ -831,6 +847,8 @@ views:
           - entity: switch.slaapkamer_chromecast
             name: Chromecast
             icon: mdi:google-chrome
+          - entity: switch.sonoff_10003d8d27
+            icon: mdi:fan
       - type: conditional                         
         conditions:                               
           - entity: switch.slaapkamer_appletv

@@ -5,7 +5,7 @@ light.gateway_light_7811dce136bb:
 device_tracker.iphone_van_martijn:
   friendly_name: iPhone
   icon: mdi:cellphone-iphone
-device_tracker.audi_batmobil_9000:
+device_tracker.batmobil_9000_position:
   entity_picture: /local/images/audi.png
   friendly_name: Auto
 person.martijn:
@@ -34,7 +34,7 @@ input_slider.alarm_clock_minute:
   friendly_name: Minuut
   icon: mdi:timer
 input_boolean.alarm_clock_status:
-  friendly_name: Wekker Status
+  friendly_name: Wekker Uit / Aan
   icon: mdi:alarm-check
 input_number.alarm_clock_hour:
   friendly_name: Uur

@@ -1,7 +1,7 @@
 """Support for Audi Connect locks."""
 import logging
 
-from homeassistant.components.lock import LockDevice
+from homeassistant.components.lock import LockEntity
 from homeassistant.const import CONF_USERNAME
 
 from .audi_entity import AudiEntity
@@ -10,9 +10,9 @@ from .const import DOMAIN
 _LOGGER = logging.getLogger(__name__)
 
 
-async def async_setup_platform(
-        hass, config, async_add_entities, discovery_info=None):
+async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Old way."""
+
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
 
@@ -26,7 +26,8 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
 
     async_add_entities(sensors)
 
-class AudiLock(AudiEntity, LockDevice):
+
+class AudiLock(AudiEntity, LockEntity):
     """Represents a car lock."""
 
     @property

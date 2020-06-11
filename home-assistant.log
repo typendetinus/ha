@@ -1,41 +1,86 @@
-2020-05-25 20:16:38 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for apple_tv which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 20:16:38 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for audiconnect which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 20:16:38 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 20:16:42 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
-2020-05-25 20:16:45 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=117 from 2020-05-25 17:21:13)
-2020-05-25 20:16:58 ERROR (MainThread) [homeassistant.config] Invalid config for [scene]: expected dict for dictionary value @ data['states'][0]['entities']. Got None. (See /config/scenes/scenes_config.yaml, line 39). Please check the docs at https://www.home-assistant.io/integrations/scene
-2020-05-25 20:17:03 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs.
-2020-05-25 20:17:03 WARNING (MainThread) [homeassistant.setup] Setup of group is taking over 10 seconds.
-2020-05-25 20:17:06 WARNING (MainThread) [homeassistant.setup] Setup of lovelace is taking over 10 seconds.
-2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for google_geocode which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for plex_recently_added which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
-2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of input_boolean is taking over 10 seconds.
-2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of zone is taking over 10 seconds.
-2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of coronavirus is taking over 10 seconds.
-2020-05-25 20:17:08 WARNING (MainThread) [homeassistant.setup] Setup of counter is taking over 10 seconds.
-2020-05-25 20:17:09 ERROR (MainThread) [homeassistant.components.coronavirus] Timeout fetching coronavirus data
-2020-05-25 20:17:09 WARNING (MainThread) [homeassistant.setup] Setup of input_datetime is taking over 10 seconds.
-2020-05-25 20:17:09 ERROR (MainThread) [glances_api] Can not load data from Glances API
-2020-05-25 20:17:09 WARNING (MainThread) [homeassistant.config_entries] Config entry for glances not ready yet. Retrying in 5 seconds.
-2020-05-25 20:17:10 ERROR (MainThread) [glances_api] Can not load data from Glances API
-2020-05-25 20:17:10 WARNING (MainThread) [homeassistant.config_entries] Config entry for glances not ready yet. Retrying in 5 seconds.
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:10 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
-2020-05-25 20:17:14 WARNING (MainThread) [homeassistant.components.binary_sensor] Setup of binary_sensor platform ping is taking over 10 seconds.
-2020-05-25 20:17:22 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to obtain the vehicle climatisation state for WAUZZZF48GA044048: 403, message='Forbidden', url='https://msg.volkswagen.de/fs-car/bs/climatisation/v1/Audi/DE/vehicles/WAUZZZF48GA044048/climater
-2020-05-25 20:17:23 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to obtain the vehicle charger state for WAUZZZF48GA044048: 403, message='Forbidden', url='https://msg.volkswagen.de/fs-car/bs/batterycharge/v1/Audi/DE/vehicles/WAUZZZF48GA044048/charger
-2020-05-25 20:17:23 WARNING (MainThread) [homeassistant.components.binary_sensor] BinarySensorDevice is deprecated, modify AudiSensor to extend BinarySensorEntity
-2020-05-25 20:17:23 WARNING (MainThread) [homeassistant.components.lock] LockDevice is deprecated, modify AudiLock to extend LockEntity
-2020-05-25 20:17:27 WARNING (MainThread) [homeassistant.components.media_player] MediaPlayerDevice is deprecated, modify AppleTvDevice to extend MediaPlayerEntity
-2020-05-25 20:17:27 WARNING (MainThread) [homeassistant.components.remote] RemoteDevice is deprecated, modify AppleTVRemote to extend RemoteEntity
-2020-05-25 20:17:32 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-06-11 08:13:55 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-06-11 08:13:55 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for apple_tv which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-06-11 08:13:55 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-06-11 08:13:55 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for audiconnect which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-06-11 08:13:56 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option is deprecated, please remove it from your configuration
+2020-06-11 08:13:58 WARNING (MainThread) [homeassistant.components.lovelace] Resources need to be specified in your configuration.yaml. Please see the docs.
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:14:07 ERROR (MainThread) [homeassistant.components.automation] Entity id already exists - ignoring: automation.tuindeur_is_nog_open. Platform automation does not generate unique IDs
+2020-06-11 08:15:21 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
+2020-06-11 08:15:35 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
+2020-06-11 08:16:11 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for google_geocode which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-06-11 08:16:11 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for plex_recently_added which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2020-06-11 08:16:16 ERROR (MainThread) [homeassistant.components.sensor] Error while setting up coronavirus platform for sensor
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 186, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 292, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 443, in _async_add_entity
+    entity.async_write_ha_state()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 08:16:20 WARNING (MainThread) [homeassistant.setup] Setup of hacs is taking over 10 seconds.
+2020-06-11 08:16:24 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform qnap is taking over 10 seconds.
+2020-06-11 08:16:35 WARNING (MainThread) [homeassistant.setup] Setup of xiaomi_aqara is taking over 10 seconds.
+2020-06-11 08:17:04 WARNING (MainThread) [homeassistant.components.media_player] MediaPlayerDevice is deprecated, modify AppleTvDevice to extend MediaPlayerEntity
+2020-06-11 08:17:04 WARNING (MainThread) [homeassistant.components.remote] RemoteDevice is deprecated, modify AppleTVRemote to extend RemoteEntity
+2020-06-11 08:17:07 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:17:07 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:17:07 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:17:07 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:17:07 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:17:07 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:17:11 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Unexpected error
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 57, in _process
+    result = await handler(hass, data, inputs[0].get("payload"))
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 90, in async_devices_sync
+    for entity in async_get_entities(hass, data.config)
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/helpers.py", line 435, in sync_serialize
+    device["attributes"].update(trt.sync_attributes())
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/trait.py", line 1210, in sync_attributes
+    modes.append(_generate("option", attrs[input_select.ATTR_OPTIONS]))
+KeyError: 'options'
+2020-06-11 08:17:11 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Error handling message {'inputs': [{'intent': 'action.devices.SYNC'}], 'requestId': '8972041230557158758'}: {'errorCode': 'unknownError'}
+2020-06-11 08:17:11 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Unexpected error
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 57, in _process
+    result = await handler(hass, data, inputs[0].get("payload"))
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 90, in async_devices_sync
+    for entity in async_get_entities(hass, data.config)
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/helpers.py", line 435, in sync_serialize
+    device["attributes"].update(trt.sync_attributes())
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/trait.py", line 1210, in sync_attributes
+    modes.append(_generate("option", attrs[input_select.ATTR_OPTIONS]))
+KeyError: 'options'
+2020-06-11 08:17:11 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Error handling message {'inputs': [{'intent': 'action.devices.SYNC'}], 'requestId': '5855667411349215921'}: {'errorCode': 'unknownError'}
+2020-06-11 08:17:12 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Unexpected error
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 57, in _process
+    result = await handler(hass, data, inputs[0].get("payload"))
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 90, in async_devices_sync
+    for entity in async_get_entities(hass, data.config)
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/helpers.py", line 435, in sync_serialize
+    device["attributes"].update(trt.sync_attributes())
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/trait.py", line 1210, in sync_attributes
+    modes.append(_generate("option", attrs[input_select.ATTR_OPTIONS]))
+KeyError: 'options'
+2020-06-11 08:17:12 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Error handling message {'inputs': [{'intent': 'action.devices.SYNC'}], 'requestId': '11898651522680403144'}: {'errorCode': 'unknownError'}
+2020-06-11 08:17:12 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://remotestate.nabucasa.com/request_sync (500)
+2020-06-11 08:17:29 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -81,41 +126,8 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 20:17:33 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 288, in async_add_entities
-    for entity in new_entities
-  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 285, in <listcomp>
-    self._async_add_entity(  # type: ignore
-  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 22, in <genexpr>
-    for info_type in SENSORS
-  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 37, in __init__
-    self.name = f"{coordinator.data[country].country} Coronavirus {info_type}"
-TypeError: 'NoneType' object is not subscriptable
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:40 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:46 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:46 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:47 WARNING (MainThread) [homeassistant.helpers.translation] audiconnect: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:47 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
-2020-05-25 20:17:57 WARNING (MainThread) [homeassistant.components.ps4.media_player] PS4 could not be reached
-2020-05-25 20:18:00 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-06-11 08:17:30 WARNING (MainThread) [homeassistant.components.ps4.media_player] PS4 could not be reached
+2020-06-11 08:17:35 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -161,8 +173,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 20:18:08 ERROR (MainThread) [frontend.js.latest.202005194] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
-2020-05-25 20:18:20 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-06-11 08:17:45 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -208,7 +219,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 20:18:27 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+2020-06-11 08:18:19 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
@@ -254,21 +265,1143 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
     raise client_error(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
-2020-05-25 20:18:47 WARNING (SyncWorker_16) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
-2020-05-25 20:22:09 ERROR (MainThread) [frontend.js.latest.202005194] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
-2020-05-25 20:28:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
-2020-05-25 20:28:32 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
-2020-05-25 20:28:32 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
-2020-05-25 20:29:48 ERROR (MainThread) [frontend.js.latest.202005194] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:1 Uncaught SyntaxError: Unexpected token 'export'
-2020-05-25 20:30:40 WARNING (SyncWorker_15) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
-2020-05-25 20:31:38 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
-2020-05-25 20:33:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
-2020-05-25 20:33:39 ERROR (SyncWorker_3) [xiaomi_gateway] Cannot connect to Gateway
-2020-05-25 20:33:39 ERROR (SyncWorker_3) [xiaomi_gateway] No data in response from hub None
-2020-05-25 20:38:18 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
-2020-05-25 20:38:18 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
-2020-05-25 20:38:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_raam is taking over 10 seconds
-2020-05-25 20:38:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.dakterras_deur is taking over 10 seconds
-2020-05-25 20:38:49 ERROR (SyncWorker_12) [xiaomi_gateway] Cannot connect to Gateway
-2020-05-25 20:38:49 ERROR (SyncWorker_12) [xiaomi_gateway] No data in response from hub None
-2020-05-25 20:40:56 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option (with value 'https://casatinus.duckdns.org:443') is deprecated, please remove it from your configuration
+2020-06-11 08:18:51 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:18:53 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:18:53 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:20:27 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:21:59 WARNING (MainThread) [homeassistant.helpers.translation] apple_tv: the '.translations' directory has been moved, the new name is 'translations', starting with Home Assistant 0.111 your translations will no longer load if you do not move/rename this 
+2020-06-11 08:22:04 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:24:21 WARNING (SyncWorker_13) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 08:27:09 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:32:14 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:34:33 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:38:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
+2020-06-11 08:38:28 ERROR (SyncWorker_6) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 08:38:28 ERROR (SyncWorker_6) [xiaomi_gateway] No data in response from hub None
+2020-06-11 08:39:39 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:41:24 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Refusing to update non-registered sensor: 692d98285a3febed2b43a7cd34d604b516750ea84000c69c8d8ab8245d849a45_connectivity_sim_2
+2020-06-11 08:41:25 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:25 WARNING (MainThread) [asyncio] socket.send() raised exception.
+2020-06-11 08:41:26 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:0 SyntaxError: Unexpected keyword 'export'
+2020-06-11 08:41:41 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Unexpected error
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 57, in _process
+    result = await handler(hass, data, inputs[0].get("payload"))
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 90, in async_devices_sync
+    for entity in async_get_entities(hass, data.config)
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/helpers.py", line 435, in sync_serialize
+    device["attributes"].update(trt.sync_attributes())
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/trait.py", line 1210, in sync_attributes
+    modes.append(_generate("option", attrs[input_select.ATTR_OPTIONS]))
+KeyError: 'options'
+2020-06-11 08:41:41 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Error handling message {'inputs': [{'intent': 'action.devices.SYNC'}], 'requestId': '8056360335460938166'}: {'errorCode': 'unknownError'}
+2020-06-11 08:41:42 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Unexpected error
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 57, in _process
+    result = await handler(hass, data, inputs[0].get("payload"))
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 90, in async_devices_sync
+    for entity in async_get_entities(hass, data.config)
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/helpers.py", line 435, in sync_serialize
+    device["attributes"].update(trt.sync_attributes())
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/trait.py", line 1210, in sync_attributes
+    modes.append(_generate("option", attrs[input_select.ATTR_OPTIONS]))
+KeyError: 'options'
+2020-06-11 08:41:42 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Error handling message {'inputs': [{'intent': 'action.devices.SYNC'}], 'requestId': '17590608797052774499'}: {'errorCode': 'unknownError'}
+2020-06-11 08:41:42 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Unexpected error
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 57, in _process
+    result = await handler(hass, data, inputs[0].get("payload"))
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/smart_home.py", line 90, in async_devices_sync
+    for entity in async_get_entities(hass, data.config)
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/helpers.py", line 435, in sync_serialize
+    device["attributes"].update(trt.sync_attributes())
+  File "/usr/src/homeassistant/homeassistant/components/google_assistant/trait.py", line 1210, in sync_attributes
+    modes.append(_generate("option", attrs[input_select.ATTR_OPTIONS]))
+KeyError: 'options'
+2020-06-11 08:41:42 ERROR (MainThread) [homeassistant.components.google_assistant.smart_home] Error handling message {'inputs': [{'intent': 'action.devices.SYNC'}], 'requestId': '14325661268119154522'}: {'errorCode': 'unknownError'}
+2020-06-11 08:41:42 WARNING (MainThread) [hass_nabucasa.cloud_api] Fetched https://remotestate.nabucasa.com/request_sync (500)
+2020-06-11 08:44:44 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:49:49 ERROR (MainThread) [custom_components.apple_tv] Failed to connect
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 936, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs)  # type: ignore  # noqa
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 962, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.7/asyncio/base_events.py", line 949, in create_connection
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 473, in sock_connect
+    return await fut
+  File "/usr/local/lib/python3.7/asyncio/selector_events.py", line 503, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('10.0.1.247', 3689)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/apple_tv/__init__.py", line 223, in _connect_loop
+    await self._connect(conf)
+  File "/config/custom_components/apple_tv/__init__.py", line 305, in _connect
+    self.atv = await connect(conf, self.hass.loop, session=session)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/__init__.py", line 298, in connect
+    await atv.connect()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/__init__.py", line 578, in connect
+    await self._requester.login()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 96, in login
+    resp = await self._do(_login_request, is_login=True)
+  File "/usr/local/lib/python3.7/site-packages/pyatv/dmap/daap.py", line 127, in _do
+    resp, status = await action()
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 53, in get_data
+    raise ex
+  File "/usr/local/lib/python3.7/site-packages/pyatv/support/net.py", line 43, in get_data
+    timeout=DEFAULT_TIMEOUT if timeout is None else timeout,
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/client.py", line 483, in _request
+    timeout=real_timeout
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 523, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 859, in _create_connection
+    req, traces, timeout)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 1004, in _create_direct_connection
+    raise last_exc
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 986, in _create_direct_connection
+    req=req, client_error=client_error)
+  File "/usr/local/lib/python3.7/site-packages/aiohttp/connector.py", line 943, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host 10.0.1.247:3689 ssl:None [Connect call failed ('10.0.1.247', 3689)]
+2020-06-11 08:54:17 WARNING (SyncWorker_7) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 09:10:15 WARNING (SyncWorker_11) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 09:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 09:21:06 WARNING (SyncWorker_19) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 09:25:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 09:25:55 ERROR (SyncWorker_14) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 09:25:55 ERROR (SyncWorker_14) [xiaomi_gateway] No data in response from hub None
+2020-06-11 09:29:52 WARNING (SyncWorker_2) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 09:30:34 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 09:30:34 ERROR (SyncWorker_14) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 09:30:34 ERROR (SyncWorker_14) [xiaomi_gateway] No data in response from hub None
+2020-06-11 09:36:34 WARNING (SyncWorker_4) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 09:47:25 WARNING (SyncWorker_6) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 10:02:55 WARNING (SyncWorker_11) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 10:09:07 WARNING (SyncWorker_17) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 10:10:51 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_raam is taking over 10 seconds
+2020-06-11 10:10:51 ERROR (SyncWorker_17) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 10:10:51 ERROR (SyncWorker_17) [xiaomi_gateway] No data in response from hub None
+2020-06-11 10:13:15 WARNING (SyncWorker_19) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 10:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 10:28:44 WARNING (SyncWorker_3) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 10:38:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.badkamer_deur is taking over 10 seconds
+2020-06-11 10:38:43 ERROR (SyncWorker_4) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 10:38:43 ERROR (SyncWorker_4) [xiaomi_gateway] No data in response from hub None
+2020-06-11 10:52:56 WARNING (SyncWorker_12) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 11:04:18 WARNING (SyncWorker_10) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 11:10:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_raam is taking over 10 seconds
+2020-06-11 11:10:13 ERROR (SyncWorker_15) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 11:10:13 ERROR (SyncWorker_15) [xiaomi_gateway] No data in response from hub None
+2020-06-11 11:15:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.badkamer_deur is taking over 10 seconds
+2020-06-11 11:15:23 ERROR (SyncWorker_17) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 11:15:23 ERROR (SyncWorker_17) [xiaomi_gateway] No data in response from hub None
+2020-06-11 11:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 11:21:51 WARNING (SyncWorker_8) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 11:22:01 ERROR (SyncWorker_5) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 11:26:15 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:26:15 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:26:20 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:0 SyntaxError: Unexpected keyword 'export'
+2020-06-11 11:26:27 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:26:56 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:33:04 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:33:09 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:0 SyntaxError: Unexpected keyword 'export'
+2020-06-11 11:37:21 WARNING (SyncWorker_7) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 11:39:36 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:40:34 ERROR (MainThread) [custom_components.audiconnect.audi_connect_account] Unable to update the vehicle position of WAUZZZF48GA044048: 204, message='No Content', url='https://msg.volkswagen.de/fs-car/bs/cf/v1/Audi/DE/vehicles/WAUZZZF48GA044048/position
+2020-06-11 11:42:31 WARNING (SyncWorker_0) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 11:43:55 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:43:55 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:54:11 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 11:54:12 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 12:01:06 WARNING (SyncWorker_15) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 12:02:11 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 12:02:11 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 12:03:53 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.kantoor_deur is taking over 10 seconds
+2020-06-11 12:03:53 ERROR (SyncWorker_13) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 12:03:53 ERROR (SyncWorker_13) [xiaomi_gateway] No data in response from hub None
+2020-06-11 12:07:18 WARNING (SyncWorker_15) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 12:15:59 ERROR (MainThread) [homeassistant.components.webhook] Error processing webhook 692d98285a3febed2b43a7cd34d604b516750ea84000c69c8d8ab8245d849a45
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/webhook/__init__.py", line 90, in async_handle_webhook
+    response = await webhook["handler"](hass, webhook_id, request)
+  File "/usr/src/homeassistant/homeassistant/components/mobile_app/webhook.py", line 190, in handle_webhook
+    WEBHOOK_COMMANDS[webhook_type](hass, config_entry, webhook_payload)
+concurrent.futures._base.CancelledError
+2020-06-11 12:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 12:23:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 12:23:29 ERROR (SyncWorker_14) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 12:23:29 ERROR (SyncWorker_14) [xiaomi_gateway] No data in response from hub None
+2020-06-11 12:31:49 ERROR (MainThread) [aioharmony.hubconnector] 10.0.1.125: Connection timed out for hub 12997762
+2020-06-11 12:37:46 WARNING (SyncWorker_14) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 12:59:55 WARNING (SyncWorker_4) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 13:14:22 WARNING (SyncWorker_1) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 13:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 13:24:21 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 13:24:21 ERROR (SyncWorker_12) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 13:24:21 ERROR (SyncWorker_12) [xiaomi_gateway] No data in response from hub None
+2020-06-11 13:29:21 WARNING (SyncWorker_6) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 13:36:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_raam is taking over 10 seconds
+2020-06-11 13:36:44 ERROR (SyncWorker_14) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 13:36:44 ERROR (SyncWorker_14) [xiaomi_gateway] No data in response from hub None
+2020-06-11 13:39:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 13:39:50 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 13:39:50 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
+2020-06-11 13:41:51 WARNING (SyncWorker_1) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.141: Communication error
+2020-06-11 13:41:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_raam is taking over 10 seconds
+2020-06-11 13:41:54 ERROR (SyncWorker_7) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 13:41:54 ERROR (SyncWorker_7) [xiaomi_gateway] No data in response from hub None
+2020-06-11 14:05:27 WARNING (SyncWorker_19) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 14:14:45 WARNING (SyncWorker_13) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 14:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 14:38:31 WARNING (SyncWorker_0) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 14:55:14 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.badkamer_deur is taking over 10 seconds
+2020-06-11 14:55:14 ERROR (SyncWorker_16) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 14:55:14 ERROR (SyncWorker_16) [xiaomi_gateway] No data in response from hub None
+2020-06-11 14:56:03 WARNING (SyncWorker_3) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 14:58:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.badkamer_deur is taking over 10 seconds
+2020-06-11 14:58:20 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 14:58:20 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
+2020-06-11 15:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 15:35:57 ERROR (SyncWorker_12) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 15:37:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 15:37:01 ERROR (SyncWorker_16) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 15:37:01 ERROR (SyncWorker_16) [xiaomi_gateway] No data in response from hub None
+2020-06-11 15:38:24 WARNING (SyncWorker_15) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 15:42:07 ERROR (SyncWorker_0) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 16:11:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 16:11:36 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 16:11:36 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2020-06-11 16:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 16:35:42 WARNING (SyncWorker_3) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 17:01:31 WARNING (SyncWorker_16) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 17:08:46 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:08:47 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:11:17 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:11:17 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:11:22 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:0 SyntaxError: Unexpected keyword 'export'
+2020-06-11 17:13:12 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:13:16 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:0 SyntaxError: Unexpected keyword 'export'
+2020-06-11 17:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 17:17:20 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:17:20 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 17:17:24 ERROR (MainThread) [frontend.js.latest.202006032] https://casatinus.duckdns.org/local/community/bar-card/bar-card.js:5355:0 SyntaxError: Unexpected keyword 'export'
+2020-06-11 17:24:15 WARNING (SyncWorker_4) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 18:10:20 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 18:10:51 ERROR (SyncWorker_2) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 18:12:32 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 18:12:49 WARNING (SyncWorker_0) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 18:15:47 ERROR (MainThread) [homeassistant.components.mobile_app.webhook] Received invalid sensor payload for connectivity_sim_2: required key not provided @ data['state']. Got None
+2020-06-11 18:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 18:19:01 WARNING (SyncWorker_3) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 18:32:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.badkamer_deur is taking over 10 seconds
+2020-06-11 18:32:37 ERROR (SyncWorker_5) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 18:32:37 ERROR (SyncWorker_5) [xiaomi_gateway] No data in response from hub None
+2020-06-11 18:35:33 WARNING (SyncWorker_7) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 18:54:08 WARNING (SyncWorker_10) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 18:56:43 WARNING (SyncWorker_5) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 19:00:26 ERROR (SyncWorker_7) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 19:12:48 ERROR (SyncWorker_13) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 19:14:15 WARNING (SyncWorker_7) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 19:16:15 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 111, in _handle_refresh_interval
+    await self.async_refresh()
+  File "/usr/src/homeassistant/homeassistant/helpers/update_coordinator.py", line 177, in async_refresh
+    update_callback()
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 297, in async_write_ha_state
+    self._async_write_ha_state()  # type: ignore
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 320, in _async_write_ha_state
+    state = self.state
+  File "/usr/src/homeassistant/homeassistant/components/coronavirus/sensor.py", line 55, in state
+    getattr(case, self.info_type) for case in self.coordinator.data.values()
+TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'
+2020-06-11 19:18:21 WARNING (SyncWorker_11) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 19:25:10 ERROR (SyncWorker_10) [homeassistant.components.qnap.sensor] Failed to fetch QNAP stats from the NAS
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.7/http/client.py", line 1344, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.7/http/client.py", line 306, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.7/http/client.py", line 267, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.7/socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/usr/local/lib/python3.7/site-packages/urllib3/util/retry.py", line 403, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 428, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 336, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/qnap/sensor.py", line 195, in update
+    self.data["system_health"] = self._api.get_system_health()
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 121, in get_system_health
+    resp = self._get_url("management/manaRequest.cgi?subfunc=sysinfo&sysHealth=1")
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 69, in _get_url
+    result = self._execute_get_url(url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/qnapstats/qnap_stats.py", line 85, in _execute_get_url
+    resp = self._session.get(url, timeout=self._timeout, verify=self._verify_ssl)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/requests/adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='10.0.1.101', port=8080): Read timed out. (read timeout=5)
+2020-06-11 19:27:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of binary_sensor.slaapkamer_deur is taking over 10 seconds
+2020-06-11 19:27:18 ERROR (SyncWorker_18) [xiaomi_gateway] Cannot connect to Gateway
+2020-06-11 19:27:18 ERROR (SyncWorker_18) [xiaomi_gateway] No data in response from hub None
+2020-06-11 19:35:24 WARNING (SyncWorker_2) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error
+2020-06-11 19:38:30 WARNING (SyncWorker_4) [homeassistant.components.tplink.switch] Could not read state for 10.0.1.247: Communication error

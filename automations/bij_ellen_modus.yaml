@@ -1,22 +1,13 @@
   - alias: 'Bij Ellen modus'
     initial_state: 'on'
     trigger:
-      platform: state
-      entity_id: person.martijn
-      to: 'ellen'
-
-    condition:
-      condition: and
-      conditions:
-      - condition: state
-        entity_id: sun.sun
-        state: 'below_horizon'
-      - condition: state
-        entity_id: light.kantoor
-        state: "off"
+      platform: zone
+      event: enter
+      zone: zone.ellen
+      entity_id: device_tracker.iphone_van_martijn
 
     action:
-      - service: scene.turn_on
-        entity_id: scene.thuis_komen_na_zonsondergang
+      - service: automation.turn_on
+        entity_id: automation.waakstand_bij_ellen
       - service: input_boolean.turn_on
-        entity_id: input_boolean.bij_ellen
+        entity_id: input_boolean.waakstand

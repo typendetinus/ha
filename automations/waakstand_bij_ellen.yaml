@@ -1,0 +1,9 @@
+  - alias: 'Waakstand bij Ellen'
+    initial_state: 'off'
+    trigger:
+      platform: sun
+      event: sunset
+      offset: '+00:00:00'
+    action:
+      service: scene.turn_on
+      entity_id: scene.woonkamer_on

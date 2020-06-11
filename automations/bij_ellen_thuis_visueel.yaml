@@ -1,0 +1,10 @@
+  - alias: 'Bij Ellen Visueel'
+    initial_state: 'on'
+    trigger:
+      platform: state
+      entity_id: person.martijn
+      to: 'Ellen'
+
+    action:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.bij_ellen
