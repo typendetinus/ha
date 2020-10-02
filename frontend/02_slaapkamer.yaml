@@ -1,0 +1,156 @@
+title: Slaapkamer
+panel: true
+cards:
+  - type: "custom:homekit-card"
+    style: |
+      :host {
+        --tile-background: rgba(255, 255, 255, 0.8);
+        --tile-border-radius: 12px;
+        --tile-width: 100px;
+        --tile-height: 100px;
+        --tile-on-background: rgba(255, 255, 255, 1);
+        
+        --tile-name-text-color: rgba(0, 0, 0, 0.4);
+        --tile-on-name-text-color: rgba(0, 0, 0, 1);
+        
+        --tile-state-text-color: rgba(0, 0, 0, 0.4);
+        --tile-on-state-text-color: rgba(0, 0, 0, 1);
+        
+        --tile-state-changed-text-color: rgb(134, 134, 134);
+        --tile-unavailable-state-text-color: rgba(255, 0, 0, 1);
+        
+        --tile-value-text-color: rgba(255, 0, 0, 1);
+        
+        
+        --tile-icon-color: rgba(0, 0, 0, 0.3);
+        --tile-on-icon-color: #f7d959;
+        
+        
+        --tile-width-mobile: 90px;
+        --tile-height-mobile: 90px;
+
+        --min-header-height: 150px;
+
+        --tile-icon-size: 30px;
+
+        --tile-image-radius: 100%
+
+        --slider-width: 120px;
+        --slider-height: 120px;
+
+    enableColumns: true
+    rows:
+      - row: 1
+        columns:
+          - column: 1
+            entities:
+              - title:  
+                popup:
+                  type: custom:light-popup-card
+                  scenesInARow: 2
+                  brightnessWidth: 130px
+                  brightnessHeight: 350px
+                  switchWidth: 110px
+                  switchHeight: 300px
+                entities:
+                  - entity: sensor.slaapkamer_sensor_temperature
+                    name: Temperatuur
+                    icon: mdi:thermometer
+                    hideState: true
+                  - entity: sensor.beweging_slaapkamer
+                    name: Beweging
+                    icon: mdi:motion-sensor
+                    offIcon: mdi:motion-sensor-off
+                    offStates:
+                      - "Stil"
+                    hideState: true
+                  - entity: light.slaapkamer
+                    name: Verlichting
+                    icon: mdi:ceiling-light
+                    popupExtend:
+                      actions:
+                        - service: hue.hue_activate_scene
+                          type: call-service
+                          service_data:
+                            group_name: Slaapkamer
+                            scene_name: Knus
+                          name: Knus
+                          color: "#6600ff"
+                        - service: hue.hue_activate_scene
+                          type: call-service
+                          service_data:
+                            group_name: Slaapkamer
+                            scene_name: Sleep time
+                          name: Slapen
+                          color: "#ff9900"
+                        - service: hue.hue_activate_scene
+                          type: call-service
+                          service_data:
+                            group_name: Slaapkamer
+                            scene_name: Bright
+                          name: Helder
+                          color: "#ffffff"
+                  - entity: switch.bedlamp01
+                    name: Nachtlampje Martijn
+                    icon: mdi:desk-lamp
+                  - entity: switch.bedlamp02
+                    name: Nachtlampje Ellen
+                    icon: mdi:desk-lamp
+                  - entity: switch.sonoff_10003d8d27
+                    name: Ventilator
+                    icon: mdi:fan
+                    spin: true
+
+      - row: 2
+        columns:
+          - column: 1
+            entities:
+              - title:  
+                entities:
+                  - entity: switch.slaapkamer_televisie
+                    name: Televisie
+                  - entity: switch.slaapkamer_appletv
+                    name: Apple TV
+                  - entity: switch.romantiek
+                    name: Romantiek
+                  - entity: input_boolean.alarm_clock_status
+                    name: Wekker
+                    icon: mdi:alarm
+                    offIcon: mdi:alarm-off
+                  - card: "custom:mini-media-player"
+                    noPadding: true
+                    wider: true
+                    double_tap_action:
+                      action: popup
+                      entity: media_player.slaapkamer_apple_tv
+                    cardStyle: |
+                          ha-card {
+                            height: 100%;
+                            background: none  !important;
+                            box-shadow: none !important;
+                            position: relative;
+                            font-size: 0.5vw !important;
+                            image
+                          }
+                          ha-card{
+                          overflow: hidden !important;
+                          }
+                          :host #primaryProgress{
+                          background: #474A52 !important; 
+                          display: flex !important;
+                          height: 100%;
+                          }
+                    cardOptions:
+                        artwork: full-cover
+                        entity: media_player.slaapkamer_apple_tv
+                        name: Apple TV
+                        hide:
+                          power: true
+                          progress: false
+                          runtime: true
+                          icon: true
+                          name: false
+                          source: true
+                          volume: true
+                          controls: false
+

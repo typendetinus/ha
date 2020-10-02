@@ -1,10 +1,23 @@
   - alias: 'Bij Ellen Visueel'
     initial_state: 'on'
     trigger:
-      platform: state
-      entity_id: person.martijn
-      to: 'Ellen'
+      platform: zone
+      entity_id: device_tracker.iphone_van_martijn
+      zone: zone.ellen
+      event: enter
 
     action:
       - service: input_boolean.turn_on
+        entity_id: input_boolean.bij_ellen
+
+  - alias: 'Bij Ellen Visueel Uit'
+    initial_state: 'on'
+    trigger:
+      platform: zone
+      entity_id: device_tracker.iphone_van_martijn
+      zone: zone.ellen
+      event: leave
+
+    action:
+      - service: input_boolean.turn_off
         entity_id: input_boolean.bij_ellen

@@ -1,0 +1,23 @@
+- alias: Voordeur Monitor
+  initial_state: 'on'
+  description: Voordeur Monitor
+  trigger:
+  - event: leave
+    platform: zone
+    entity_id: device_tracker.iphone_van_martijn
+    zone: zone.home
+  condition:
+  - condition: state
+    entity_id: binary_sensor.voordeur
+    state: 'on'
+  action:
+  - data:
+      message: De voordeur is nog open
+      title: Deur Open!
+      data:
+        push:
+          sound:
+            name: default
+            critical: 1
+            volume: 1.0
+    service: notify.mobile_app_iphone_van_martijn

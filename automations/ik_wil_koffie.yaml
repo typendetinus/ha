@@ -9,6 +9,12 @@
         action_type: shake_air
     action:
       - service: tts.google_cloud_say
-        entity_id: media_player.huis
-        data:
-          message: "Zeg Martijn, waar is mijn koffie ?"
+        entity_id: media_player.slaapkamer_hub
+        data_template:
+          message: >
+           {{ [
+             "Zeg Martijn, wil jij koffie halen ?",
+             "Zeg Ellen, wil jij koffie halen ?",
+             "Volgens mij heeft Martijn wel trek in koffie Ellen",
+             "Volgens mij heeft Ellen wel trek in koffie Martijn"
+              ] | random }}

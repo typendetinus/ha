@@ -1,0 +1,48 @@
+title: Kantoor
+panel: true
+cards:
+  - type: "custom:homekit-card"
+    enableColumns: true
+    rows:
+      - row: 1
+        columns:
+          - column: 1
+            entities:
+              - title:  
+                entities:
+                  - entity: sensor.kantoor_temperature
+                    name: Temperatuur
+                    icon: mdi:thermometer
+                    hideState: true
+                  - entity: sensor.beweging_kantoor
+                    name: Beweging
+                    icon: mdi:motion-sensor
+                    offIcon: mdi:motion-sensor-off
+                    offStates:
+                      - "Stil"
+                    hideState: true
+                  - entity: light.kantoor
+                    name: Verlichting
+                    icon: mdi:ceiling-light
+                  - entity: switch.burolamp
+                    name: Burolamp
+                    icon: mdi:desk-lamp
+                    hideState: true
+
+      - row: 2
+        columns:
+          - column: 1
+            entities:
+              - title:  
+                entities:
+                  - entity: switch.kantoor_televisie
+                    name: Televisie
+                  - entity: switch.kantoor_appletv
+                    name: Apple TV
+                  - entity: switch.kantoor_ps3
+                    name: PlayStation 3
+                    icon: mdi:playstation
+                  - entity: switch.kantoor_squeezebox
+                    name: Squeezebox
+                  - entity: switch.kantoor_radio
+                    name: Radio

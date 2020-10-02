@@ -1,0 +1,101 @@
+resources:
+- type: module
+  url: /local/community/button-card/button-card.js
+- type: module
+  url: /local/community/mini-media-player/mini-media-player-bundle.js
+- type: module
+  url: /local/community/lovelace-card-mod/card-mod.js
+- type: module
+  url: /local/community/bar-card/bar-card.js
+- type: js
+  url: /local/community/vertical-stack-in-card/vertical-stack-in-card.js
+- type: module
+  url: /local/community/mini-graph-card/mini-graph-card-bundle.js
+- type: module
+  url: /local/community/decluttering-card/decluttering-card.js
+- type: module
+  url: /local/community/weather-card/weather-card.js
+- type: module
+  url: /local/community/simple-weather-card/simple-weather-card-bundle.js
+- type: module
+  url: /local/community/custom-header/custom-header.js
+- type: module
+  url: /local/community/calendar-card/calendar-card.js
+- type: js
+  url: /local/community/lovelace-home-feed-card/lovelace-home-feed-card.js
+- type: module
+  url: /local/community/simple-thermostat/simple-thermostat.js
+- type: js
+  url: /local/community/upcoming-media-card/upcoming-media-card.js
+- type: module
+  url: /local/community/stack-in-card/stack-in-card.js
+- type: module
+  url: /local/community/config-template-card/config-template-card.js
+- type: module
+  url: /local/community/lovelace-layout-card/layout-card.js
+- type: module
+  url: /local/community/lovelace-card-tools/card-tools.js
+- type: module
+  url: /local/sidebar-card.js
+- type: module
+  url: /local/community/lovelace-thermostat-card/main.js
+- type: module
+  url: /local/community/Homekit-panel-card/homekit-panel-card.js
+- type: module
+  url: /local/community/light-popup-card/light-popup-card.js
+- type: module
+  url: /local//community/browser_mod/browser_mod.js
+- type: module
+  url: /local/community/media_player-popup-card/media_player-popup-card.js
+
+ 
+title: Home Control
+sidebar:
+  template: |
+    <li> 
+    </li>
+    <li>
+      {% if now().hour  < 5 %} Goedenacht,
+      {% elif now().hour < 12 %} Goedemorgen,
+      {% elif now().hour < 18 %} Goedemiddag,
+      {% else %} Goedenavond Martijn{% endif %}
+    </li>
+    <li> binnen is het
+    {{states('sensor.living_room_thermostat_temperature')}}°C en buiten {{state_attr('weather.huis', 'temperature') }}°C.</li>
+    <li>
+      {% if is_state('weather.huis', 'cloudy') %} Vandaag is het bewolkt buiten
+      {% elif is_state('weather.huis', 'clear-night') %} Vanacht is het helder
+      {% elif is_state('weather.huis', 'fog') %} Vandaag is het mistig buiten
+      {% elif is_state('weather.huis', 'hail') %} Vandaag gaat het hagelen
+      {% elif is_state('weather.huis', 'lightning') %} Vandaag gaat het onweren
+      {% elif is_state('weather.huis', 'lightning-rainy') %} Vandaag onweert het met regen
+      {% elif is_state('weather.huis', 'partlycloudy') %} Vandaag is het deels bewolkt
+      {% elif is_state('weather.huis', 'pouring') %} Vandaag is er harde regen
+      {% elif is_state('weather.huis', 'rainy') %} Vandaag is het regenachtig
+      {% elif is_state('weather.huis', 'snowy') %} Vandaag is het sneeuwachtig
+      {% elif is_state('weather.huis', 'snowy-rainy') %} Vandaag is er regenachtige sneeuw
+      {% elif is_state('weather.huis', 'sunny') %} Vandaag is het zonnig
+      {% elif is_state('weather.huis', 'windy') %} Vandaag staat er veel wind
+      {% elif is_state('weather.huis', 'windy-variant') %} Vandaag zijn er windvlagen
+      {% elif is_state('weather.huis', 'exceptional') %} Er is extreem weer vandaag {% endif %}
+    </li>
+  width:
+    mobile: 0
+    tablet: 22
+    desktop: 20
+  digitalClock: true
+  date: true
+  hideTopMenu: false
+  bottomCard:
+        type: custom:calendar-card
+        cardOptions:
+          title: Kalender
+          numberofDays: 
+          entities:
+            - calendar.martijn_kalf_gmail_com
+            - calendar.ellen_en_martijn
+views:
+  - !include /config/frontend/00_algemeen.yaml
+  - !include /config/frontend/01_woonkamer.yaml
+  - !include /config/frontend/02_slaapkamer.yaml
+  - !include /config/frontend/03_kantoor.yaml

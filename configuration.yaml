@@ -12,8 +12,15 @@ cloud:
 
 discovery:
 
+browser_mod:
+  
 homeassistant:
   customize: !include customize.yaml
+  auth_providers:
+    - type: trusted_networks
+      trusted_networks:
+        - 10.0.1.0/24
+        - 92.108.229.212
 
 recorder:
   purge_keep_days: 5
@@ -42,6 +49,10 @@ mobile_app:
 spotify:
   client_id: !secret spotify_id
   client_secret: !secret spotify_secret
+
+spotcast:
+  sp_dc: !secret sp_dc
+  sp_key: !secret sp_key
 
 homekit:
   filter:
@@ -102,11 +113,6 @@ homekit:
     switch.burolamp:
       name: Burolamp
 
-xiaomi_aqara:
-  discovery_retry: 9
-  gateways:
-    - key: !secret xi_key
-
 sonoff:
   username: !secret sonoff_user
   password: !secret sonoff_password
@@ -145,7 +151,7 @@ weather:
     mode: daily
   - platform: buienradar
     name: 'Delft'
-   
+
 panel_iframe:
   tautulli:
     title: Plex
@@ -161,6 +167,8 @@ tts:
     voice: nl-NL-Wavenet-D
 
 media_extractor:
+
+media_source:
 
 shell_command:
   zet_linuxpc_uit: "ssh martijn@spacestation.martijn sudo pm-suspend"
@@ -206,6 +214,14 @@ binary_sensor:
     host: 10.0.1.161
     name: Printer
     scan_interval: 30
+  - platform: mqtt
+    name: "My Computer - Connected"
+    state_topic: "iotlink/workgroup/desktop-52gd7bp/lwt"
+    value_template: "{{ value }}"
+    payload_on: "ON"
+    payload_off: "OFF"
+    device_class: "connectivity"
+    qos: 1
 
 glances:
   - host: 10.0.1.192
@@ -248,7 +264,6 @@ light:
       - light.kantoor02
 
 group: !include groups.yaml
-media_player: !include_dir_merge_list media_player/
 automation: !include_dir_merge_list automations/
 script: !include_dir_merge_named scripts/
 switch: !include_dir_merge_list switch/

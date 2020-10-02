@@ -1,0 +1,17 @@
+- alias: Zolder raam Links Monitor
+  initial_state: 'on'
+  description: Zolder raam Links Monitor
+  trigger:
+  - event: leave
+    platform: zone
+    entity_id: device_tracker.iphone_van_martijn
+    zone: zone.home
+  condition:
+  - condition: state
+    entity_id: binary_sensor.zolderraam_links
+    state: 'on'
+  action:
+  - data:
+      message: Het Zolder raam Links is nog open
+      title: Raam Open!
+    service: notify.mobile_app_iphone_van_martijn

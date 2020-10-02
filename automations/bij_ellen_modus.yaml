@@ -2,12 +2,26 @@
     initial_state: 'on'
     trigger:
       platform: zone
-      event: enter
-      zone: zone.ellen
       entity_id: device_tracker.iphone_van_martijn
+      zone: zone.ellen
+      event: enter
 
     action:
       - service: automation.turn_on
         entity_id: automation.waakstand_bij_ellen
       - service: input_boolean.turn_on
+        entity_id: input_boolean.waakstand
+
+  - alias: 'Bij Ellen modus'
+    initial_state: 'on'
+    trigger:
+      platform: zone
+      entity_id: device_tracker.iphone_van_martijn
+      zone: zone.ellen
+      event: leave
+
+    action:
+      - service: automation.turn_off
+        entity_id: automation.waakstand_bij_ellen
+      - service: input_boolean.turn_off
         entity_id: input_boolean.waakstand

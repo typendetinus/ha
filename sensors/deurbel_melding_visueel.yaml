@@ -8,3 +8,47 @@
           {% elif is_state('input_boolean.erisgebeld','off') %}
           Stil
           {% endif %}
+
+  - platform: template
+    sensors:
+      buitendeuren_status:
+        friendly_name: Buitendeuren Open/Dicht
+        value_template: >-
+          {% if is_state('group.buitendeuren','on') %}
+          Open
+          {% elif is_state('group.buitendeuren','off') %}
+          Dicht
+          {% endif %}
+
+  - platform: template
+    sensors:
+      ramen_status:
+        friendly_name: Ramen Open/Dicht
+        value_template: >-
+          {% if is_state('group.ramen','on') %}
+          Open
+          {% elif is_state('group.ramen','off') %}
+          Dicht
+          {% endif %}
+
+  - platform: template
+    sensors:
+      beweging_kantoor:
+        friendly_name: Beweging
+        value_template: >-
+          {% if is_state('binary_sensor.kantoor_motion','on') %}
+          Beweging
+          {% elif is_state('binary_sensor.kantoor_motion','off') %}
+          Stil
+          {% endif %}
+
+  - platform: template
+    sensors:
+      beweging_slaapkamer:
+        friendly_name: Beweging
+        value_template: >-
+          {% if is_state('binary_sensor.slaapkamer_sensor_motion','on') %}
+          Beweging
+          {% elif is_state('binary_sensor.slaapkamer_sensor_motion','off') %}
+          Stil
+          {% endif %}

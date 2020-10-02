@@ -1,0 +1,146 @@
+    title: Woonkamer
+    panel: true
+    cards:
+      - type: "custom:homekit-card"
+        style: |
+          :host {
+            --tile-background: rgba(255, 255, 255, 0.8);
+            --tile-border-radius: 12px;
+            --tile-width: 100px;
+            --tile-height: 100px;
+            --tile-on-background: rgba(255, 255, 255, 1);
+            
+            --tile-name-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-name-text-color: rgba(0, 0, 0, 1);
+            
+            --tile-state-text-color: rgba(0, 0, 0, 0.4);
+            --tile-on-state-text-color: rgba(0, 0, 0, 1);
+            
+            --tile-state-changed-text-color: rgb(134, 134, 134);
+            --tile-unavailable-state-text-color: rgba(255, 0, 0, 1);
+            
+            --tile-value-text-color: rgba(255, 0, 0, 1);
+            
+            
+            --tile-icon-color: rgba(0, 0, 0, 0.3);
+            --tile-on-icon-color: #f7d959;
+            
+            
+            --tile-width-mobile: 90px;
+            --tile-height-mobile: 90px;
+
+            --min-header-height: 150px;
+
+            --tile-icon-size: 30px;
+
+            --tile-image-radius: 100%
+
+            --slider-width: 120px;
+            --slider-height: 120px;
+
+        enableColumns: true
+        rows:
+          - row: 1
+            columns:
+              - column: 1
+                entities:
+                  - title:  
+                    entities:
+                      - entity: light.woonkamer
+                        name: Zithoek
+                        icon: mdi:ceiling-light
+                      - entity: light.videohoek
+                        icon: mdi:spotlight-beam
+                      - entity: switch.televisie_meubel
+                        icon: mdi:lightbulb
+                      - entity: switch.boekenkast
+                      - entity: light.keuken
+                        icon: mdi:ceiling-light
+                      - entity: light.afzuigkap
+                        icon: mdi:stove
+
+          - row: 2
+            columns:
+              - column: 1
+                entities:
+                  - title:  
+                    entities:
+                      - entity: climate.living_room
+                        tap_action:
+                          action: popup
+                      - entity: sensor.er_is_gebeld
+                        offIcon: mdi:bell
+                        offStates:
+                          - "Stil"
+                        hideState: true
+                        name: Deurbel
+                        icon: mdi:bell-ring
+                      - entity: sensor.buitendeuren_status
+                        name: Deuren
+                        icon: mdi:door-open
+                        offIcon: mdi:door-closed
+                        offStates:
+                          - "Dicht"
+                        hideState: true
+                      - entity: sensor.buitendeuren_status
+                        name: Ramen
+                        icon: mdi:window-open
+                        offIcon: mdi:window-closed
+                        offStates:
+                          - "Dicht"
+                        hideState: true
+                      - card: "custom:mini-media-player"
+                        noPadding: true
+                        wider: true
+                        double_tap_action:
+                          action: popup
+                          entity: media_player.woonkamer_apple_tv
+                        cardStyle: |
+                              ha-card {
+                                height: 100%;
+                                background: none  !important;
+                                box-shadow: none !important;
+                                position: relative;
+                                font-size: 0.5vw !important;
+                                image
+                              }
+                              ha-card{
+                              overflow: hidden !important;
+                              }
+                              :host #primaryProgress{
+                              background: #474A52 !important; 
+                              display: flex !important;
+                              height: 100%;
+                              }
+                        cardOptions:
+                            artwork: full-cover
+                            entity: media_player.woonkamer_apple_tv
+                            name: Apple TV
+                            hide:
+                              power: true
+                              progress: false
+                              runtime: true
+                              icon: true
+                              name: false
+                              source: true
+                              volume: true
+                              controls: false
+
+          - row: 3
+            columns:
+              - column: 1
+                entities:
+                  - title:  
+                    entities:
+                      - entity: switch.woonkamer_televisie
+                        name: Televisie
+                      - entity: switch.woonkamer_appletv
+                        name: Apple TV
+                      - entity: switch.woonkamer_bluray_speler
+                        name: Blu-ray Speler
+                      - entity: switch.woonkamer_xbox
+                        name: Xbox One
+                      - entity: switch.woonkamer_squeezebox
+                        name: Squeezebox
+                      - entity: switch.woonkamer_radio
+                        name: Radio

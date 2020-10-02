@@ -81,7 +81,7 @@ resources:
   url: /local/community/mini-media-player/mini-media-player-bundle.js
 - type: module
   url: /local/community/lovelace-card-mod/card-mod.js
-- type: js
+- type: module
   url: /local/community/bar-card/bar-card.js
 - type: js
   url: /local/community/vertical-stack-in-card/vertical-stack-in-card.js
@@ -110,7 +110,7 @@ resources:
 - type: module
   url: /local/community/simple-thermostat/simple-thermostat.js
 - type: module
-  url : /local/community/canvas-gauge-card/canvas-gauge-card.js
+  url: /local/community/canvas-gauge-card/canvas-gauge-card.js
 - type: js
   url: /local/community/upcoming-media-card/upcoming-media-card.js
 - type: module
@@ -119,13 +119,45 @@ resources:
   url: /local/community/stack-in-card/stack-in-card.js
 - type: module
   url: /local/community/lovelace-time-picker-card/time-picker-card.js
+- type: module
+  url: /local/community/lovelace-text-input-row/lovelace-text-input-row.js
+- type: module
+  url: /local/community/config-template-card/config-template-card.js
+- type: module
+  url: /local/community/search-card/search-card.js
+- type: module
+  url: /local/community/lovelace-layout-card/layout-card.js
+- type: module
+  url: /local/community/lovelace-card-tools/card-tools.js
+- type: module
+  url: /local/community/check-button-card/check-button-card.js
+- type: module
+  url: /local/community/swipe-card/swipe-card.js
+- type: module
+  url: /local/community/lovelace-state-switch/state-switch.js
+- type: module
+  url: /local/community/air-visual-card/air-visual-card.js
+- type: module
+  url: /local/community/lovelace-gui-sandbox/gui-sandbox.js
+- type: module
+  url: /local/community/thermostat-popup-card/thermostat-popup-card.ts
+- type: module
+  url: /local/community/deep-press/deep-press.js
+- type: module
+  url: /local/community/light-popup-card.js
+- type: module
+  url: /local/community/switch-popup-card/switch-popup-card.js
+- type: module
+  url: /local/community/cover-popup-card/cover-popup-card.js
+- type: module
+  url: /local/community/lovelace-gap-card/gap-card.js
 
 views:
   - title: Martijn
     badges:
       - entity: person.martijn
       - entity: device_tracker.batmobil_9000_position
-      - entity: sensor.battery_level_iphone
+      - entity: sensor.iphone_van_martijn_battery_level
       - entity: sensor.batmobil_9000_tank_level
     cards:
     - type: custom:weather-card
@@ -193,6 +225,38 @@ views:
           entities:
           - entity: sensor.slaapkamer_sensor_temperature
             name: Slaapkamer
+          font_size: 100
+          group: false
+          line_width: 6
+          points_per_hour: 0.5
+          show:
+            extrema: false
+            fill: fade
+            labels: false
+            name: true
+            state: true
+          type: custom:mini-graph-card
+      - type: horizontal-stack
+        cards:
+        - color_thresholds_transition: smooth
+          entities:
+          - entity: sensor.beneden_hal_sensor_temperature
+            name: Beneden Hal
+          font_size: 100
+          group: false
+          line_width: 6
+          points_per_hour: 0.5
+          show:
+            extrema: false
+            fill: fade
+            labels: false
+            name: true
+            state: true
+          type: custom:mini-graph-card
+        - color_thresholds_transition: smooth
+          entities:
+          - entity: sensor.kantoor_temperature
+            name: Kantoor
           font_size: 100
           group: false
           line_width: 6
@@ -413,7 +477,7 @@ views:
             box-shadow: 3px 3px rgba(0,0,0,0.4);
             overflow: hidden
           }
-        image: /local/images/audi_a4.jpg
+        image: /local/images/autotuutuut.png
         elements:
           - type: image
             image: /local/images/cardbackK.png
@@ -711,7 +775,7 @@ views:
         title: Boven
         show_header_toggle: false
         entities:
-          - entity: light.boven_hal
+          - entity: light.boven_hal_2
             type: custom:slider-entity-row
             name: Gang
             icon: mdi:ceiling-light
@@ -746,14 +810,6 @@ views:
             hide_when_off: true
             toggle: true
             group: true
-          - entity: light.wasruimte
-            type: custom:slider-entity-row
-            name: Wasruimte
-            icon: mdi:ceiling-light
-            secondary_info: last-changed
-            hide_when_off: true
-            toggle: true
-            group: true
           - entity: light.zolder
             type: custom:slider-entity-row
             name: Zolder
@@ -761,7 +817,7 @@ views:
             secondary_info: last-changed
             hide_when_off: true
             toggle: true
-            group: true
+            group: true          
     icon: 'mdi:lightbulb-multiple'
     title: Verlichting
 
@@ -785,13 +841,13 @@ views:
             icon: mdi:disc-player
           - entity: switch.woonkamer_playstation3
             name: PlayStation 3
-            icon: mdi:playstation
+            icon: mdi:sony-playstation
           - entity: switch.woonkamer_playstation4
             name: PlayStation 4
-            icon: mdi:playstation
+            icon: mdi:sony-playstation
           - entity: switch.woonkamer_xbox
             name: Xbox One
-            icon: mdi:xbox
+            icon: mdi:microsoft-xbox
           - entity: switch.woonkamer_chromecast
             name: Chromecast
             icon: mdi:google-chrome
@@ -869,7 +925,7 @@ views:
             icon: mdi:apple
           - entity: switch.kantoor_ps3
             name: PlayStation 3
-            icon: mdi:playstation
+            icon: mdi:sony-playstation
           - entity: switch.kantoor_squeezebox
             name: Squeezebox
             icon: mdi:cast-audio
@@ -918,7 +974,7 @@ views:
             icon: mdi:disc-player
           - entity: switch.logeerkamer_playstation3
             name: PlayStation 3
-            icon: mdi:playstation
+            icon: mdi:sony-playstation
           - entity: switch.logeerkamer_chromecast
             name: Chromecast
             icon: mdi:google-chrome
@@ -1060,149 +1116,71 @@ views:
               color: green
               icon: mdi:remote
 
-      - type: horizontal-stack
+      - type: custom:vertical-stack-in-card
+        title: Home Server Monitor
         cards:
-        - color_thresholds_transition: smooth
-          entities:
-          - entity: sensor.home_cpu_used
-            name: CPU Home
-          font_size: 100
-          group: false
-          hour24: true
-          line_width: 6
-          points_per_hour: 0.5
-          show:
-            extrema: false
-            fill: fade
-            labels: false
-            name: true
-            state: true
-          color_thresholds:
-            - value: 40
-              color: '#00ff00'
-            - value: 50
-              color: '#ffa500'
-            - value: 70
-              color: '#ff0000'
-          type: custom:mini-graph-card
-        - color_thresholds_transition: smooth
-          entities:
-          - entity: sensor.home_ram_used_percent
-            name: RAM Home
-          font_size: 100
-          group: false
-          hour24: true
-          line_width: 6
-          points_per_hour: 0.5
-          show:
-            extrema: false
-            fill: fade
-            labels: false
-            name: true
-            state: true
-          color_thresholds:
-            - value: 40
-              color: '#00ff00'
-            - value: 60
-              color: '#ffa500'
-            - value: 90
-              color: '#ff0000'
-          type: custom:mini-graph-card
-        - color_thresholds_transition: smooth
-          entities:
-          - entity: sensor.home_core_0_temp
-            name: Temp
-          font_size: 100
-          group: false
-          hour24: true
-          line_width: 6
-          points_per_hour: 0.5
-          show:
-            extrema: false
-            fill: fade
-            labels: false
-            name: true
-            state: true
-          color_thresholds:
-            - value: 40
-              color: '#00ff00'
-            - value: 50
-              color: '#ffa500'
-            - value: 70
-              color: '#ff0000'
-          type: custom:mini-graph-card
+          - type: horizontal-stack
+            cards:
+              - type: custom:mini-graph-card
+                entities:
+                  - sensor.home_cpu_used
+                name: CPU
+                line_color: '#2980b9'
+                line_width: 2
+                hours_to_show: 24
+              - type: custom:mini-graph-card
+                entities:
+                  - sensor.home_core_0_temp
+                name: Temp
+                line_color: '#2980b9'
+                line_width: 2
+                hours_to_show: 24
+          - type: custom:bar-card
+            entity: sensor.home_used
+            title: HDD
+            title_position: inside
+            align: split
+            show_icon: true
+            color: '#00ba6a'
+          - type: custom:bar-card
+            entity: sensor.home_ram_used_percent
+            title: RAM
+            title_position: inside
+            align: split
+            show_icon: true
 
-      - type: horizontal-stack
+      - type: custom:vertical-stack-in-card
+        title: Meterkast Server Monitor
         cards:
-        - color_thresholds_transition: smooth
-          entities:
-          - entity: sensor.meterkast_cpu_used
-            name: CPU Pi
-          font_size: 100
-          group: false
-          hour24: true
-          line_width: 6
-          points_per_hour: 0.5
-          show:
-            extrema: false
-            fill: fade
-            labels: false
-            name: true
-            state: true
-          color_thresholds:
-            - value: 5
-              color: '#00ff00'
-            - value: 10
-              color: '#ffa500'
-            - value: 40
-              color: '#ff0000'
-          type: custom:mini-graph-card
-        - color_thresholds_transition: smooth
-          entities:
-          - entity: sensor.meterkast_ram_used_percent
-            name: RAM Pi
-          font_size: 100
-          group: false
-          hour24: true
-          line_width: 6
-          points_per_hour: 0.5
-          show:
-            extrema: false
-            fill: fade
-            labels: false
-            name: true
-            state: true
-          color_thresholds:
-            - value: 40
-              color: '#00ff00'
-            - value: 50
-              color: '#ffa500'
-            - value: 70
-              color: '#ff0000'
-          type: custom:mini-graph-card
-        - color_thresholds_transition: smooth
-          entities:
-          - entity: sensor.meterkast_cpu_thermal_1_temp
-            name: Temp
-          font_size: 100
-          group: false
-          hour24: true
-          line_width: 6
-          points_per_hour: 0.5
-          show:
-            extrema: false
-            fill: fade
-            labels: false
-            name: true
-            state: true
-          color_thresholds:
-            - value: 40
-              color: '#00ff00'
-            - value: 50
-              color: '#ffa500'
-            - value: 70
-              color: '#ff0000'
-          type: custom:mini-graph-card
+          - type: horizontal-stack
+            cards:
+              - type: custom:mini-graph-card
+                entities:
+                  - sensor.meterkast_cpu_used
+                name: CPU
+                line_color: '#2980b9'
+                line_width: 2
+                hours_to_show: 24
+              - type: custom:mini-graph-card
+                entities:
+                  - sensor.meterkast_cpu_thermal_1_temp
+                name: Temp
+                line_color: '#2980b9'
+                line_width: 2
+                hours_to_show: 24
+          - type: custom:bar-card
+            entity: sensor.meterkast_used
+            title: HDD
+            title_position: inside
+            align: split
+            show_icon: true
+            color: '#00ba6a'
+          - type: custom:bar-card
+            entity: sensor.meterkast_ram_used_percent
+            title: RAM
+            title_position: inside
+            align: split
+            show_icon: true
 
       - type: horizontal-stack
         cards:
@@ -1265,12 +1243,21 @@ views:
             green: 500
             orange: 7000
             red: 9000
-
+        - type: gauge
+          name: Printer Toner
+          unit: '%'
+          entity: sensor.hp_laserjet_pro_m148_m149_black_cartridge_hp_cf294a
+          min: 0
+          max: 100
+          severity:
+            green: 70
+            orange: 40
+            red: 10
       - type: horizontal-stack
         cards:
         - color_thresholds_transition: smooth
           entities:
-          - entity: sensor.battery_level_iphone
+          - entity: sensor.iphone_van_martijn_battery_level
             name: iPhone
           font_size: 100
           group: false
@@ -1294,7 +1281,7 @@ views:
           type: custom:mini-graph-card
         - color_thresholds_transition: smooth
           entities:
-          - entity: sensor.battery_level_ipad
+          - entity: sensor.martijns_ipad_battery_level
             name: iPad
           font_size: 100
           group: false
@@ -1318,7 +1305,7 @@ views:
           type: custom:mini-graph-card
         - color_thresholds_transition: smooth
           entities:
-          - entity: sensor.battery_level_ipadair
+          - entity: sensor.martijn_s_ipad_air_battery_level
             name: iPad Air
           font_size: 100
           group: false
@@ -1351,7 +1338,18 @@ views:
             name: Database
             icon: mdi:database
 
-    icon: 'mdi:settings'
+      - type: horizontal-stack
+        title: Windows PC
+        cards:
+          - type: picture-glance
+            title: Scherm 1
+            entities: []
+            camera_image: camera.desktop_52gd7bp_screen_0
+          - type: picture-glance
+            title: Scherm 2
+            entities: []
+            camera_image: camera.desktop_52gd7bp_screen_1
+    icon: 'mdi:cog-outline'
     title: Systemen
 
   - badges: []
@@ -1415,7 +1413,7 @@ views:
             - light.afzuigkap
             - light.beneden_hal
             - light.toilet
-            - light.boven_hal_verlichting
+            - light.boven_hal_2
             - light.slaapkamer
             - light.logeerkamer
             - light.kantoor

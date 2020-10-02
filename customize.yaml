@@ -197,3 +197,5 @@ switch.bedlamp02:
   icon: mdi:theme-light-dark
 switch.bedlamp01:
   icon: mdi:theme-light-dark
+switch.woonkamer_firestick:
+  icon: mdi:amazon

@@ -12,10 +12,6 @@ resources:
 - type: module
   url: /local/community/mini-graph-card/mini-graph-card-bundle.js
 - type: module
-  url: /local/community/lovelace-auto-entities/auto-entities.js
-- type: module
-  url: /local/community/decluttering-card/decluttering-card.js
-- type: module
   url: /local/community/weather-card/weather-card.js
 - type: module
   url: /local/community/simple-weather-card/simple-weather-card-bundle.js
@@ -34,19 +30,9 @@ resources:
 - type: module
   url: /local/community/simple-thermostat/simple-thermostat.js
 - type: module
-  url : /local/community/canvas-gauge-card/canvas-gauge-card.js
-- type: js
   url: /local/community/upcoming-media-card/upcoming-media-card.js
-- type: module
-  url: /local/community/analog-clock-card/analog-clock-card.js
 
 title: Slaapkamer
 views:
   - title: Slaapkamer
     cards:
-      - type: horizontal-stack
-        cards:
-          - type: button
-            name: Wekker
-            entity: input_boolean.alarm_clock_status
-          - type: custom:analog-clock-card
